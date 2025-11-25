@@ -1,0 +1,47 @@
+2025-11-17 08:25:11,305 | INFO | Log started: C:\Users\boadae\Desktop\OSMP_Audit_OSMP_Dog_Regs_Map_(WAB)_20251117_082511.log
+2025-11-17 08:25:11,307 | INFO | Starting extraction for map: OSMP Dog Regs Map (WAB)
+2025-11-17 08:25:11,309 | INFO | Processing: OSMP Public Notifications
+2025-11-17 08:25:11,348 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:25:11,349 | INFO | Processing: Closed Trailheads
+2025-11-17 08:25:11,396 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:25:11,397 | INFO | Skipping non-feature/non-raster layer: OSMP Dog Regulations (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,398 | INFO | Skipping non-feature/non-raster layer: Trailhead Fee (for non-Boulder County Residents) (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,399 | INFO | Skipping non-feature/non-raster layer: Trail Intersection Pts (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,400 | INFO | Skipping non-feature/non-raster layer: Trail Mileage Labels (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,400 | INFO | Skipping non-feature/non-raster layer: Seasonal Dog Regs (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,779 | ERROR | ERROR processing layer: UNKNOWN
+Traceback (most recent call last):
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 89, in _get
+    return convertArcObjectToPythonObject(getattr(self._arc_object, attr_name))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[1]", line 498, in extract_baseline_data
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 92, in _get
+    raise AttributeError(
+AttributeError: The attribute 'name' is not supported on this instance of Layer.
+2025-11-17 08:25:11,782 | INFO | Skipping non-feature/non-raster layer: Dog Regs on Roads (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,782 | INFO | Skipping non-feature/non-raster layer: Closed Trails  (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,783 | INFO | Skipping non-feature/non-raster layer: Other Boulder Area Trails (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,783 | ERROR | ERROR processing layer: UNKNOWN
+Traceback (most recent call last):
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 89, in _get
+    return convertArcObjectToPythonObject(getattr(self._arc_object, attr_name))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[1]", line 498, in extract_baseline_data
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 92, in _get
+    raise AttributeError(
+AttributeError: The attribute 'name' is not supported on this instance of Layer.
+2025-11-17 08:25:11,785 | INFO | Skipping non-feature/non-raster layer: Trailhead Leash Areas (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,786 | INFO | Skipping non-feature/non-raster layer: World Topographic Map (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,787 | INFO | Skipping non-feature/non-raster layer: World Hillshade (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:25:11,799 | INFO | SUCCESS! Processed 2 layers
+2025-11-17 08:25:11,802 | INFO | CSV saved to: C:\Users\boadae\Desktop\OSMP_Baseline_OSMP_Dog_Regs_Map_(WAB)_20251117_082511.csv

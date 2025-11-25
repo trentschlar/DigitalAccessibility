@@ -1,0 +1,6 @@
+2025-11-17 08:35:12,094 | INFO | Log started: C:\Users\boadae\Desktop\OSMP_Audit_Layers_20251117_083512.log
+2025-11-17 08:35:12,095 | INFO | Starting extraction for map: Layers
+2025-11-17 08:35:12,097 | INFO | Processing: All City of Boulder Wildlife Closures
+2025-11-17 08:35:12,129 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:35:12,143 | INFO | SUCCESS! Processed 1 layers
+2025-11-17 08:35:12,144 | INFO | CSV saved to: C:\Users\boadae\Desktop\OSMP_Baseline_Layers_20251117_083512.csv

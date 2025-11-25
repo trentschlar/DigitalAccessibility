@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSMP Baseline Accessibility Audit</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #1a1a1a; margin-bottom: 5px; font-size: 28px; }
+        .subtitle { color: #666; margin-bottom: 5px; font-size: 14px; }
+        .phase-label { background: #dbeafe; color: #1e40af; padding: 5px 12px; border-radius: 4px; font-size: 13px; font-weight: 600; display: inline-block; margin-bottom: 20px; }
+        .stats-section { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 20px; margin-bottom: 25px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .stat-box { text-align: center; }
+        .stat-number { font-size: 32px; font-weight: 700; color: #0c4a6e; }
+        .stat-label { font-size: 14px; color: #0369a1; margin-top: 5px; }
+        .controls { display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; }
+        .search-box { flex: 1; min-width: 250px; }
+        input[type="text"] { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+        select, button { padding: 10px 16px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; cursor: pointer; background: white; }
+        .btn-export { background: #16a34a; color: white; border-color: #16a34a; }
+        .btn-export:hover { background: #15803d; }
+        .btn-save { background: #2563eb; color: white; border-color: #2563eb; }
+        .btn-save:hover { background: #1d4ed8; }
+        .btn-load { background: #7c3aed; color: white; border-color: #7c3aed; }
+        .btn-load:hover { background: #6d28d9; }
+        .map-service { border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
+        .map-header { background: #f5f5f5; padding: 15px 20px; cursor: pointer; display: flex; align-items: center; gap: 12px; }
+        .map-header:hover { background: #e8e8e8; }
+        .map-title { font-size: 18px; font-weight: 600; color: #1a1a1a; }
+        .map-count { font-size: 14px; color: #666; }
+        .layers-container { padding: 20px; display: none; }
+        .layers-container.expanded { display: block; }
+        .layer-item { border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 15px; overflow: hidden; }
+        .layer-header { padding: 12px 15px; cursor: pointer; display: flex; align-items: center; gap: 12px; }
+        .layer-header:hover { background: rgba(0,0,0,0.02); }
+        .status-pass { background: #f0fdf4; border-color: #86efac; }
+        .status-fail { background: #fef2f2; border-color: #fca5a5; }
+        .status-needs-work { background: #fefce8; border-color: #fde047; }
+        .status-not-audited { background: #f9fafb; border-color: #e5e7eb; }
+        .layer-name { font-weight: 500; color: #1a1a1a; flex: 1; }
+        .layer-form { padding: 20px; background: white; border-top: 1px solid #e0e0e0; display: none; }
+        .layer-form.expanded { display: block; }
+        .form-section { margin-bottom: 20px; }
+        .form-section h4 { font-size: 14px; font-weight: 600; color: #1a1a1a; margin-bottom: 10px; }
+        .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .form-group { display: flex; flex-direction: column; gap: 6px; }
+        label { font-size: 13px; font-weight: 500; color: #555; }
+        textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; font-family: inherit; resize: vertical; }
+        .current-state { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 6px; padding: 15px; margin-top: 15px; }
+        .current-state h4 { font-size: 14px; font-weight: 600; color: #92400e; margin-bottom: 10px; }
+        input[type="file"] { display: none; }
+        .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
+        .modal.show { display: flex; }
+        .modal-content { background: white; border-radius: 8px; max-width: 800px; width: 100%; max-height: 80vh; display: flex; flex-direction: column; }
+        .modal-header { padding: 20px; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; }
+        .modal-header h3 { font-size: 18px; font-weight: 600; }
+        .modal-close { background: none; border: none; font-size: 24px; cursor: pointer; color: #666; }
+        .modal-body { padding: 20px; overflow: auto; flex: 1; }
+        .modal-footer { padding: 20px; border-top: 1px solid #e0e0e0; background: #f9fafb; display: flex; gap: 10px; }
+        .modal-footer button { flex: 1; }
+        .export-textarea { width: 100%; height: 400px; font-family: 'Courier New', monospace; font-size: 11px; border: 1px solid #ddd; border-radius: 6px; padding: 10px; }
+        .btn-secondary { background: #6b7280; color: white; border-color: #6b7280; }
+        .btn-secondary:hover { background: #4b5563; }
+        .chevron { width: 16px; height: 16px; }
+        .issue-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; margin-right: 5px; margin-top: 5px; }
+        .tag-color { background: #fee2e2; color: #991b1b; }
+        .tag-contrast { background: #fef3c7; color: #92400e; }
+        .tag-labels { background: #dbeafe; color: #1e40af; }
+        .tag-popup { background: #e0e7ff; color: #3730a3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OSMP Baseline Accessibility Audit</h1>
+        <p class="subtitle">Current State Assessment - July 2026 Audit Deadline</p>
+        <div class="phase-label">PHASE 1: BASELINE ASSESSMENT</div>
+        
+        <div class="stats-section">
+            <div class="stat-box">
+                <div class="stat-number" id="totalLayers">68</div>
+                <div class="stat-label">Total Layers</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="auditedCount">0</div>
+                <div class="stat-label">Audited</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="passCount">0</div>
+                <div class="stat-label">Pass (No Issues)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="failCount">0</div>
+                <div class="stat-label">Need Remediation</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search layers...">
+            </div>
+            <select id="filterSelect">
+                <option value="all">All Statuses</option>
+                <option value="not-audited">Not Audited</option>
+                <option value="pass">Pass</option>
+                <option value="needs-work">Needs Work</option>
+                <option value="fail">Fail</option>
+            </select>
+            <button class="btn-export" onclick="exportBaseline()">Export Baseline</button>
+            <button class="btn-save" onclick="saveBaseline()">Save Audit</button>
+            <button class="btn-load" onclick="document.getElementById('fileInput').click()">Load Audit</button>
+            <input type="file" id="fileInput" accept=".json" onchange="loadBaseline(event)">
+        </div>
+
+        <div id="mapServices"></div>
+    </div>
+
+    <div class="modal" id="exportModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Export Baseline Audit (CSV)</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <textarea id="exportText" class="export-textarea" readonly></textarea>
+                <div style="margin-top:15px;font-size:13px;color:#555;">
+                    <strong>Next Steps:</strong>
+                    <ol style="margin-left:20px;margin-top:5px;">
+                        <li>Copy this baseline data</li>
+                        <li>Paste into Excel and save as baseline.csv</li>
+                        <li>Use the Remediation Tracker to document fixes</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-export" onclick="copyToClipboard()">Copy to Clipboard</button>
+                <button class="btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var mapLayers = {
+            'OSMP Trails': ['OSMP Public Notifications','Closed Trailheads','Other Boulder Area Trail Closures','Trail Difficulty','Wide Trail Opportunities in City of Boulder','OSMP Trails - Trailheads','OSMP Trails – Trail Intersection Points','OSMP Trails – OSMP Closed Trails','OSMP Trails – OSMP Open Trails','OSMP Trails – Trail Milage Labels','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited'],
+            'Dog Regulations': ['OSMP Public Notifications','Closed Trailheads','Other Boulder Area Trail Closures','OSMP Dog Regulations – Trailhead Fee (for non-Boulder County Residents)','OSMP Dog Regulations – Trail Intersection Points','OSMP Dog Regulations – Trail Milage Labels','OSMP Dog Regulations – Seasonal Dog Regs','OSMP Dog Regulations – Dog Regs on Roads','OSMP Dog Regulations –Closed Trails','OSMP Dog Regulations – Dog Trail Regulation','OSMP Dog Regulations – Dog Regulation Areas','OSMP Dog Regulations – Trailhead Leash Areas','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited','Water Regs','Bridges'],
+            'Wildlife Closures': ['OSMP Public Notifications','Closed Trailheads','Seasonal Dog Regulations','Other Boulder Area Trail Closures','OSMP Trails - Trailheads','OSMP Trails – Trail Intersection Points','OSMP Trails – OSMP Closed Trails','OSMP Trails – OSMP Open Trails','OSMP Trails – Trail Milage Labels','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Wildlife Closure Areas – Climbing Formations','Wildlife Closure Areas – Climbing Access','Wildlife Closure Areas – Current Wildlife Closures','Wildlife Closure Areas – Habitat Conservation Areas','OSMP Wildlife Closures - All','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited','Water Regs'],
+            'Horse Regulations': ['Horse Trailer Parking at OSMP Trailheads','Trail Intersection Pts','Closed Trails','Trail Milage Labels','Trail Regulations (Horse)','Area Regulations (Horse)','Other Boulder Area Trails']
+        };
+
+        var baselineData = loadFromStorage();
+
+        function loadFromStorage() {
+            var saved = localStorage.getItem('osmpBaselineAudit');
+            return saved ? JSON.parse(saved) : {};
+        }
+
+        function getLayerBaseline(mapName,layerName) {
+            var key = mapName+'|||'+layerName;
+            if (!baselineData[key]) {
+                baselineData[key] = {
+                    status: 'not-audited',
+                    colorIssues: false,
+                    colorNotes: '',
+                    contrastIssues: false,
+                    contrastMeasurements: '',
+                    contrastNotes: '',
+                    symbolIssues: false,
+                    symbolNotes: '',
+                    labelIssues: false,
+                    labelNotes: '',
+                    popupIssues: false,
+                    popupNotes: '',
+                    popupHeaderBg: '',
+                    popupHeaderText: '',
+                    popupRestrictedBg: '',
+                    popupFontSize: '',
+                    issuesSummary: '',
+                    auditDate: '',
+                    auditor: ''
+                };
+            }
+            return baselineData[key];
+        }
+
+        function updateLayerBaseline(mapName,layerName,field,value) {
+            var key = mapName+'|||'+layerName;
+            var data = getLayerBaseline(mapName,layerName);
+            data[field] = value;
+            
+            // Auto-calculate status
+            var hasIssues = data.colorIssues || data.contrastIssues || data.symbolIssues || data.labelIssues || data.popupIssues;
+            if (data.status === 'not-audited' && (hasIssues || data.auditDate)) {
+                data.status = hasIssues ? 'needs-work' : 'pass';
+            }
+            
+            baselineData[key] = data;
+            localStorage.setItem('osmpBaselineAudit',JSON.stringify(baselineData));
+            updateStats();
+        }
+
+        function updateStats() {
+            var total = 0, audited = 0, pass = 0, fail = 0;
+            Object.keys(mapLayers).forEach(function(mapName) {
+                mapLayers[mapName].forEach(function(layer) {
+                    total++;
+                    var data = getLayerBaseline(mapName,layer);
+                    if (data.status !== 'not-audited') audited++;
+                    if (data.status === 'pass') pass++;
+                    if (data.status === 'fail' || data.status === 'needs-work') fail++;
+                });
+            });
+            document.getElementById('totalLayers').textContent = total;
+            document.getElementById('auditedCount').textContent = audited;
+            document.getElementById('passCount').textContent = pass;
+            document.getElementById('failCount').textContent = fail;
+        }
+
+        function renderMapServices() {
+            var search = document.getElementById('searchInput').value.toLowerCase();
+            var filter = document.getElementById('filterSelect').value;
+            var html = '';
+            Object.keys(mapLayers).forEach(function(mapName) {
+                var filtered = mapLayers[mapName].filter(function(layer) {
+                    var data = getLayerBaseline(mapName,layer);
+                    return layer.toLowerCase().indexOf(search)>-1 && (filter==='all'||data.status===filter);
+                });
+                if (filtered.length===0) return;
+                var mapId = mapName.replace(/[^a-zA-Z0-9]/g,'-');
+                html += '<div class="map-service"><div class="map-header" onclick="toggleMap(\''+mapId+'\')"><span class="chevron" id="chevron-'+mapId+'">▶</span><span class="map-title">'+mapName+'</span><span class="map-count">('+filtered.length+' layers)</span></div><div class="layers-container" id="layers-'+mapId+'">';
+                filtered.forEach(function(layer) {
+                    var data = getLayerBaseline(mapName,layer);
+                    var layerId = (mapName+'-'+layer).replace(/[^a-zA-Z0-9]/g,'-');
+                    html += '<div class="layer-item status-'+data.status+'"><div class="layer-header" onclick="toggleLayer(\''+layerId+'\',\''+mapName.replace(/'/g,"\\'")+'\',\''+layer.replace(/'/g,"\\'")+'\')"><span class="chevron" id="chevron-'+layerId+'">▶</span><span class="layer-name">'+layer+'</span></div><div class="layer-form" id="form-'+layerId+'"></div></div>';
+                });
+                html += '</div></div>';
+            });
+            document.getElementById('mapServices').innerHTML = html;
+        }
+
+        function renderLayerForm(mapName,layerName,data) {
+            var html = '<div class="form-section"><h4>Current Status</h4><div class="form-grid">';
+            html += '<div class="form-group"><label>Audit Status</label><select onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'status\',this.value)"><option value="not-audited"'+(data.status==='not-audited'?' selected':'')+'>Not Audited</option><option value="pass"'+(data.status==='pass'?' selected':'')+'>Pass - No Issues</option><option value="needs-work"'+(data.status==='needs-work'?' selected':'')+'>Needs Work</option><option value="fail"'+(data.status==='fail'?' selected':'')+'>Fail - Critical Issues</option></select></div>';
+            html += '<div class="form-group"><label>Audit Date</label><input type="date" value="'+data.auditDate+'" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'auditDate\',this.value)"></div>';
+            html += '<div class="form-group"><label>Auditor</label><input type="text" value="'+data.auditor+'" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'auditor\',this.value)"></div>';
+            html += '</div></div>';
+            
+            html += '<div class="form-section"><h4>Issue Checklist</h4><div class="form-grid">';
+            html += '<div><input type="checkbox"'+(data.colorIssues?' checked':'')+' onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'colorIssues\',this.checked)"> <label>Color as only indicator</label></div>';
+            html += '<div><input type="checkbox"'+(data.contrastIssues?' checked':'')+' onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'contrastIssues\',this.checked)"> <label>Contrast below 3:1</label></div>';
+            html += '<div><input type="checkbox"'+(data.symbolIssues?' checked':'')+' onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'symbolIssues\',this.checked)"> <label>Symbol accessibility issues</label></div>';
+            html += '<div><input type="checkbox"'+(data.labelIssues?' checked':'')+' onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'labelIssues\',this.checked)"> <label>Label accessibility issues</label></div>';
+            html += '<div><input type="checkbox"'+(data.popupIssues?' checked':'')+' onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'popupIssues\',this.checked)"> <label>Pop-up accessibility issues</label></div>';
+            html += '</div></div>';
+            
+            html += '<div class="form-section"><h4>Detailed Findings</h4>';
+            html += '<div class="form-group"><label>Color Issues (WCAG 1.4.1)</label><textarea rows="2" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'colorNotes\',this.value)">'+data.colorNotes+'</textarea></div>';
+            html += '<div class="form-group"><label>Contrast Measurements (WCAG 1.4.11)</label><input type="text" placeholder="e.g., Symbol: 2.1:1, Label: 3.8:1" value="'+data.contrastMeasurements+'" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'contrastMeasurements\',this.value)"><textarea rows="2" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'contrastNotes\',this.value)">'+data.contrastNotes+'</textarea></div>';
+            html += '<div class="form-group"><label>Symbol Issues</label><textarea rows="2" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'symbolNotes\',this.value)">'+data.symbolNotes+'</textarea></div>';
+            html += '<div class="form-group"><label>Label Issues</label><textarea rows="2" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'labelNotes\',this.value)">'+data.labelNotes+'</textarea></div>';
+            html += '<div class="form-group"><label>Pop-up Issues</label><textarea rows="2" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'popupNotes\',this.value)">'+data.popupNotes+'</textarea></div>';
+            html += '</div>';
+            
+            html += '<div class="current-state"><h4>Current Pop-up Colors</h4><div class="form-grid">';
+            html += '<div class="form-group"><label>Header Background</label><input type="text" placeholder="#27443A" value="'+data.popupHeaderBg+'" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'popupHeaderBg\',this.value)"></div>';
+            html += '<div class="form-group"><label>Header Text</label><input type="text" placeholder="white" value="'+data.popupHeaderText+'" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'popupHeaderText\',this.value)"></div>';
+            html += '<div class="form-group"><label>Restricted Background</label><input type="text" placeholder="#741919" value="'+data.popupRestrictedBg+'" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'popupRestrictedBg\',this.value)"></div>';
+            html += '<div class="form-group"><label>Font Size</label><input type="text" placeholder="18px" value="'+data.popupFontSize+'" onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'popupFontSize\',this.value)"></div>';
+            html += '</div></div>';
+            
+            html += '<div class="form-section"><label>Issues Summary (for reports)</label><textarea rows="3" placeholder="Concise summary of all accessibility issues found..." onchange="updateLayerBaseline(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'issuesSummary\',this.value)">'+data.issuesSummary+'</textarea></div>';
+            
+            return html;
+        }
+
+        function toggleMap(mapId) {
+            var container = document.getElementById('layers-'+mapId);
+            var chevron = document.getElementById('chevron-'+mapId);
+            if (container.classList.contains('expanded')) {
+                container.classList.remove('expanded');
+                chevron.textContent = '▶';
+            } else {
+                container.classList.add('expanded');
+                chevron.textContent = '▼';
+            }
+        }
+
+        function toggleLayer(layerId,mapName,layerName) {
+            var form = document.getElementById('form-'+layerId);
+            var chevron = document.getElementById('chevron-'+layerId);
+            if (form.classList.contains('expanded')) {
+                form.classList.remove('expanded');
+                chevron.textContent = '▶';
+            } else {
+                var data = getLayerBaseline(mapName,layerName);
+                form.innerHTML = renderLayerForm(mapName,layerName,data);
+                form.classList.add('expanded');
+                chevron.textContent = '▼';
+            }
+        }
+
+        function exportBaseline() {
+            var csv = 'Map Service,Layer Name,Status,Audit Date,Auditor,Color Issues,Color Notes,Contrast Issues,Contrast Measurements,Contrast Notes,Symbol Issues,Symbol Notes,Label Issues,Label Notes,Popup Issues,Popup Notes,Popup Header Bg,Popup Header Text,Popup Restricted Bg,Popup Font Size,Issues Summary\n';
+            Object.keys(mapLayers).forEach(function(mapName) {
+                mapLayers[mapName].forEach(function(layer) {
+                    var data = getLayerBaseline(mapName,layer);
+                    var clean = function(text) { return (text||'').replace(/"/g,'""').replace(/\n/g,' '); };
+                    csv += '"'+mapName+'","'+layer+'","'+data.status+'","'+data.auditDate+'","'+data.auditor+'","'+data.colorIssues+'","'+clean(data.colorNotes)+'","'+data.contrastIssues+'","'+data.contrastMeasurements+'","'+clean(data.contrastNotes)+'","'+data.symbolIssues+'","'+clean(data.symbolNotes)+'","'+data.labelIssues+'","'+clean(data.labelNotes)+'","'+data.popupIssues+'","'+clean(data.popupNotes)+'","'+data.popupHeaderBg+'","'+data.popupHeaderText+'","'+data.popupRestrictedBg+'","'+data.popupFontSize+'","'+clean(data.issuesSummary)+'"\n';
+                });
+            });
+            document.getElementById('exportText').value = csv;
+            document.getElementById('exportModal').classList.add('show');
+        }
+
+        function closeModal() {
+            document.getElementById('exportModal').classList.remove('show');
+        }
+
+        function copyToClipboard() {
+            var text = document.getElementById('exportText');
+            text.select();
+            document.execCommand('copy');
+            alert('Baseline audit copied! Paste into Excel and save as baseline.csv');
+        }
+
+        function saveBaseline() {
+            var dataStr = JSON.stringify(baselineData, null, 2);
+            var blob = new Blob([dataStr], {type:'application/json'});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'OSMP_Baseline_Audit_'+new Date().toISOString().split('T')[0]+'.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function loadBaseline(event) {
+            var file = event.target.files[0];
+            if (!file) return;
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    baselineData = JSON.parse(e.target.result);
+                    localStorage.setItem('osmpBaselineAudit',JSON.stringify(baselineData));
+                    renderMapServices();
+                    updateStats();
+                    alert('Baseline audit loaded successfully!');
+                } catch (error) {
+                    alert('Error loading file: '+error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        document.getElementById('searchInput').addEventListener('input',renderMapServices);
+        document.getElementById('filterSelect').addEventListener('change',renderMapServices);
+
+        renderMapServices();
+        updateStats();
+    </script>
+</body>
+</html>

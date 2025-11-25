@@ -1,0 +1,18 @@
+2025-11-14 16:31:53,818 | INFO | Log started: C:\Users\boadae\Desktop\OSMP_Audit_Layers_20251114_163153.log
+2025-11-14 16:31:53,819 | INFO | Starting extraction for map: Layers
+2025-11-14 16:31:53,820 | INFO | Processing: Horse Trailer Parking at OSMP Trailheads
+2025-11-14 16:31:53,972 | INFO |   \u2713 Extracted: colors=4; labels=False
+2025-11-14 16:31:53,972 | INFO | Processing: Trail Intersection Pts
+2025-11-14 16:31:54,008 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-14 16:31:54,008 | INFO | Processing: Closed Trails
+2025-11-14 16:31:54,048 | INFO |   \u2713 Extracted: colors=2; labels=False
+2025-11-14 16:31:54,050 | INFO | Processing: Trail Mileage Labels
+2025-11-14 16:31:54,075 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-14 16:31:54,077 | INFO | Processing: Trail Regulations
+2025-11-14 16:31:54,122 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-14 16:31:54,122 | INFO | Processing: Area Regulations
+2025-11-14 16:31:54,154 | INFO |   \u2713 Extracted: colors=2; labels=False
+2025-11-14 16:31:54,154 | INFO | Processing: Other Boulder Area Trails
+2025-11-14 16:31:54,192 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-14 16:31:54,193 | INFO | SUCCESS! Processed 7 layers
+2025-11-14 16:31:54,194 | INFO | CSV saved to: C:\Users\boadae\Desktop\OSMP_Baseline_Layers_20251114_163153.csv

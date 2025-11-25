@@ -1,0 +1,16 @@
+2025-11-17 08:49:21,871 | INFO | Log started: C:\Users\boadae\Desktop\OSMP_Audit_Layers_20251117_084921.log
+2025-11-17 08:49:21,872 | INFO | Starting extraction for map: Layers
+2025-11-17 08:49:21,874 | INFO | Processing: Trailheads (Entradas a los senderos)
+2025-11-17 08:49:21,957 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:49:21,958 | INFO | Processing: Trail Intersection Pts
+2025-11-17 08:49:21,999 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:49:22,001 | INFO | Processing: Closed Trails (Senderos Cerrados)
+2025-11-17 08:49:22,019 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:49:22,019 | INFO | Processing: Trails on OSMP (Senderos)
+2025-11-17 08:49:22,056 | INFO |   \u2713 Extracted: colors=2; labels=True
+2025-11-17 08:49:22,056 | INFO | Processing: Trail Mileage Labels
+2025-11-17 08:49:22,079 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:49:22,079 | INFO | Processing: Other Boulder Area Trails (Otros senderos del área de Boulder)
+2025-11-17 08:49:22,104 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:49:22,108 | INFO | SUCCESS! Processed 6 layers
+2025-11-17 08:49:22,108 | INFO | CSV saved to: C:\Users\boadae\Desktop\OSMP_Baseline_Layers_20251117_084921.csv

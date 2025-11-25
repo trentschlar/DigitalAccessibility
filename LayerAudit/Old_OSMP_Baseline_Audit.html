@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSMP Baseline Accessibility Audit</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; background:#f5f5f5; padding:20px; }
+.container { max-width:1400px; margin:0 auto; background:white; padding:30px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+h1 { color:#1a1a1a; margin-bottom:5px; font-size:28px; }
+.subtitle { color:#666; margin-bottom:5px; font-size:14px; }
+.phase-label { background:#dbeafe; color:#1e40af; padding:5px 12px; border-radius:4px; font-size:13px; font-weight:600; display:inline-block; margin-bottom:20px; }
+.stats-section { background:#f0f9ff; border:1px solid #bae6fd; border-radius:8px; padding:20px; margin-bottom:25px; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+.stat-box { text-align:center; }
+.stat-number { font-size:32px; font-weight:700; color:#0c4a6e; }
+.stat-label { font-size:14px; color:#0369a1; margin-top:5px; }
+.controls { display:flex; gap:15px; margin-bottom:25px; flex-wrap:wrap; }
+.search-box { flex:1; min-width:250px; }
+input[type="text"] { width:100%; padding:10px; border:1px solid #ddd; border-radius:6px; font-size:14px; }
+select, button { padding:10px 16px; border:1px solid #ddd; border-radius:6px; font-size:14px; cursor:pointer; background:white; }
+.btn-export { background:#16a34a; color:white; border-color:#16a34a; }
+.btn-export:hover { background:#15803d; }
+.btn-save { background:#2563eb; color:white; border-color:#2563eb; }
+.btn-save:hover { background:#1d4ed8; }
+.btn-load { background:#7c3aed; color:white; border-color:#7c3aed; }
+.btn-load:hover { background:#6d28d9; }
+.map-service { border:1px solid #e0e0e0; border-radius:8px; margin-bottom:20px; overflow:hidden; }
+.map-header { background:#f5f5f5; padding:15px 20px; cursor:pointer; display:flex; align-items:center; gap:12px; }
+.map-header:hover { background:#e8e8e8; }
+.map-title { font-size:18px; font-weight:600; color:#1a1a1a; }
+.map-count { font-size:14px; color:#666; }
+.layers-container { padding:20px; display:none; }
+.layers-container.expanded { display:block; }
+.layer-item { border:1px solid #e0e0e0; border-radius:6px; margin-bottom:15px; overflow:hidden; }
+.layer-header { padding:12px 15px; cursor:pointer; display:flex; align-items:center; gap:12px; }
+.status-pass { background:#f0fdf4; border-color:#86efac; }
+.status-fail { background:#fef2f2; border-color:#fca5a5; }
+.status-needs-work { background:#fefce8; border-color:#fde047; }
+.status-not-audited { background:#f9fafb; border-color:#e5e7eb; }
+.layer-name { font-weight:500; color:#1a1a1a; flex:1; }
+.layer-form { padding:20px; background:white; border-top:1px solid #e0e0e0; display:none; }
+.layer-form.expanded { display:block; }
+.form-section { margin-bottom:20px; }
+.form-section h4 { font-size:14px; font-weight:600; color:#1a1a1a; margin-bottom:10px; }
+.form-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
+.form-group { display:flex; flex-direction:column; gap:6px; }
+label { font-size:13px; font-weight:500; color:#555; }
+textarea { width:100%; padding:10px; border:1px solid #ddd; border-radius:6px; font-size:14px; font-family:inherit; resize:vertical; }
+.current-state { background:#fef3c7; border:1px solid #fbbf24; border-radius:6px; padding:15px; margin-top:15px; }
+.current-state h4 { font-size:14px; font-weight:600; color:#92400e; margin-bottom:10px; }
+input[type="file"] { display:none; }
+.chevron { width:16px; height:16px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>OSMP Baseline Accessibility Audit</h1>
+<p class="subtitle">Current State Assessment - July 2026 Audit Deadline</p>
+<div class="phase-label">PHASE 1: BASELINE ASSESSMENT</div>
+
+<div class="stats-section">
+  <div class="stat-box"><div class="stat-number" id="totalLayers">0</div><div class="stat-label">Total Layers</div></div>
+  <div class="stat-box"><div class="stat-number" id="auditedCount">0</div><div class="stat-label">Audited</div></div>
+  <div class="stat-box"><div class="stat-number" id="passCount">0</div><div class="stat-label">Pass (No Issues)</div></div>
+  <div class="stat-box"><div class="stat-number" id="failCount">0</div><div class="stat-label">Need Remediation</div></div>
+</div>
+
+<div class="controls">
+  <div class="search-box"><input type="text" id="searchInput" placeholder="Search layers..." oninput="filterLayers()"></div>
+  <select id="filterSelect" onchange="filterLayers()">
+    <option value="all">All Statuses</option>
+    <option value="not-audited">Not Audited</option>
+    <option value="pass">Pass</option>
+    <option value="needs-work">Needs Work</option>
+    <option value="fail">Fail</option>
+  </select>
+  <button class="btn-export" onclick="exportBaseline()">Export Baseline</button>
+  <button class="btn-save" onclick="saveBaseline()">Save Audit</button>
+  <button class="btn-load" onclick="document.getElementById('fileInput').click()">Load Audit</button>
+  <input type="file" id="fileInput" accept=".json" onchange="loadBaseline(event)">
+</div>
+
+<div id="mapServices"></div>
+</div>
+
+<script>
+// --- Layer definitions ---
+var mapLayers = {
+    'OSMP Trails': ['OSMP Public Notifications','Closed Trailheads','Other Boulder Area Trail Closures','Trail Difficulty','Wide Trail Opportunities in City of Boulder','OSMP Trails - Trailheads','OSMP Trails – Trail Intersection Points','OSMP Trails – OSMP Closed Trails','OSMP Trails – OSMP Open Trails','OSMP Trails – Trail Milage Labels','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited'],
+    'Dog Regulations': ['OSMP Public Notifications','Closed Trailheads','Other Boulder Area Trail Closures','OSMP Dog Regulations – Trailhead Fee (for non-Boulder County Residents)','OSMP Dog Regulations – Trail Intersection Points','OSMP Dog Regulations – Trail Milage Labels','OSMP Dog Regulations – Seasonal Dog Regs','OSMP Dog Regulations – Dog Regs on Roads','OSMP Dog Regulations –Closed Trails','OSMP Dog Regulations – Dog Trail Regulation','OSMP Dog Regulations – Dog Regulation Areas','OSMP Dog Regulations – Trailhead Leash Areas','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited','Water Regs','Bridges'],
+    'Wildlife Closures': ['OSMP Public Notifications','Closed Trailheads','Seasonal Dog Regulations','Other Boulder Area Trail Closures','OSMP Trails - Trailheads','OSMP Trails – Trail Intersection Points','OSMP Trails – OSMP Closed Trails','OSMP Trails – OSMP Open Trails','OSMP Trails – Trail Milage Labels','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Wildlife Closure Areas – Climbing Formations','Wildlife Closure Areas – Climbing Access','Wildlife Closure Areas – Current Wildlife Closures','Wildlife Closure Areas – Habitat Conservation Areas','OSMP Wildlife Closures - All','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited','Water Regs'],
+    'Horse Regulations': ['Horse Trailer Parking at OSMP Trailheads','Trail Intersection Pts','Closed Trails','Trail Milage Labels','Trail Regulations (Horse)','Area Regulations (Horse)','Other Boulder Area Trails']
+};
+
+// --- Initialize baseline data ---
+var baselineData = JSON.parse(localStorage.getItem('osmpBaselineAudit') || '{}');
+
+function initializeBaseline() {
+    Object.keys(mapLayers).forEach(function(mapName) {
+        mapLayers[mapName].forEach(function(layerName) {
+            var key = mapName + '|||' + layerName;
+            if (!baselineData[key]) {
+                baselineData[key] = {
+                    status: 'not-audited',
+                    colorIssues: false,
+                    colorNotes: '',
+                    contrastIssues: false,
+                    contrastMeasurements: '',
+                    contrastNotes: '',
+                    symbolIssues: false,
+                    symbolNotes: '',
+                    labelIssues: false,
+                    labelNotes: '',
+                    popupIssues: false,
+                    popupNotes: 'Popup information not fully accessible programmatically',
+                    popupHeaderBg: 'Popup information not fully accessible programmatically',
+                    popupHeaderText: 'Popup information not fully accessible programmatically',
+                    popupRestrictedBg: 'Popup information not fully accessible programmatically',
+                    popupFontSize: 'Popup information not fully accessible programmatically',
+                    issuesSummary: '',
+                    auditDate: '',
+                    auditor: ''
+                };
+            }
+        });
+    });
+    localStorage.setItem('osmpBaselineAudit', JSON.stringify(baselineData));
+}
+
+// --- Toggle layer display ---
+function toggleLayer(layerId, mapName, layerName) {
+    const form = document.getElementById('form-' + layerId);
+    const chevron = document.getElementById('chevron-' + layerId);
+
+    if (form.classList.contains('expanded')) {
+        form.classList.remove('expanded');
+        chevron.textContent = '▶';
+        return;
+    }
+
+    const data = baselineData[mapName + '|||' + layerName];
+
+    form.innerHTML = `
+        <div class="form-section">
+            <h4>Current Status</h4>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Audit Status</label>
+                    <select onchange="baselineData['${mapName}|||${layerName}'].status=this.value">
+                        ${['not-audited','pass','needs-work','fail'].map(s => `<option value="${s}"${data.status===s?' selected':''}>${s}</option>`).join('')}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Audit Date</label>
+                    <input type="date" value="${data.auditDate}" onchange="baselineData['${mapName}|||${layerName}'].auditDate=this.value">
+                </div>
+                <div class="form-group">
+                    <label>Auditor</label>
+                    <input type="text" value="${data.auditor}" onchange="baselineData['${mapName}|||${layerName}'].auditor=this.value">
+                </div>
+            </div>
+        </div>
+        <div class="form-section"><h4>Color</h4>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Color Issues</label>
+                    <select onchange="baselineData['${mapName}|||${layerName}'].colorIssues=this.value==='true'">
+                        <option value="false" ${!data.colorIssues?'selected':''}>No</option>
+                        <option value="true" ${data.colorIssues?'selected':''}>Yes</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Color Notes</label>
+                    <textarea rows="2" onchange="baselineData['${mapName}|||${layerName}'].colorNotes=this.value">${data.colorNotes}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-section"><h4>Contrast</h4>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Contrast Issues</label>
+                    <select onchange="baselineData['${mapName}|||${layerName}'].contrastIssues=this.value==='true'">
+                        <option value="false" ${!data.contrastIssues?'selected':''}>No</option>
+                        <option value="true" ${data.contrastIssues?'selected':''}>Yes</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Contrast Measurements</label>
+                    <textarea rows="2" onchange="baselineData['${mapName}|||${layerName}'].contrastMeasurements=this.value">${data.contrastMeasurements}</textarea>
+                </div>
+                <div class="form-group"><label>Contrast Notes</label>
+                    <textarea rows="2" onchange="baselineData['${mapName}|||${layerName}'].contrastNotes=this.value">${data.contrastNotes}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-section"><h4>Symbols</h4>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Symbol Issues</label>
+                    <select onchange="baselineData['${mapName}|||${layerName}'].symbolIssues=this.value==='true'">
+                        <option value="false" ${!data.symbolIssues?'selected':''}>No</option>
+                        <option value="true" ${data.symbolIssues?'selected':''}>Yes</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Symbol Notes</label>
+                    <textarea rows="2" onchange="baselineData['${mapName}|||${layerName}'].symbolNotes=this.value">${data.symbolNotes}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-section"><h4>Labels</h4>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Label Issues</label>
+                    <select onchange="baselineData['${mapName}|||${layerName}'].labelIssues=this.value==='true'">
+                        <option value="false" ${!data.labelIssues?'selected':''}>No</option>
+                        <option value="true" ${data.labelIssues?'selected':''}>Yes</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Label Notes</label>
+                    <textarea rows="2" onchange="baselineData['${mapName}|||${layerName}'].labelNotes=this.value">${data.labelNotes}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-section"><h4>Popups</h4>
+            <div class="form-grid">
+                <div class="form-group"><label>Popup Issues</label>
+                    <select onchange="baselineData['${mapName}|||${layerName}'].popupIssues=this.value==='true'">
+                        <option value="false" ${!data.popupIssues?'selected':''}>No</option>
+                        <option value="true" ${data.popupIssues?'selected':''}>Yes</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Popup Notes</label>
+                    <textarea rows="2" onchange="baselineData['${mapName}|||${layerName}'].popupNotes=this.value">${data.popupNotes}</textarea>
+                </div>
+                <div class="form-group"><label>Popup Header Background</label>
+                    <input type="text" value="${data.popupHeaderBg}" onchange="baselineData['${mapName}|||${layerName}'].popupHeaderBg=this.value">
+                </div>
+                <div class="form-group"><label>Popup Header Text</label>
+                    <input type="text" value="${data.popupHeaderText}" onchange="baselineData['${mapName}|||${layerName}'].popupHeaderText=this.value">
+                </div>
+                <div class="form-group"><label>Popup Restricted Background</label>
+                    <input type="text" value="${data.popupRestrictedBg}" onchange="baselineData['${mapName}|||${layerName}'].popupRestrictedBg=this.value">
+                </div>
+                <div class="form-group"><label>Popup Font Size</label>
+                    <input type="text" value="${data.popupFontSize}" onchange="baselineData['${mapName}|||${layerName}'].popupFontSize=this.value">
+                </div>
+            </div>
+        </div>
+        <div class="form-section"><h4>Summary of Issues</h4>
+            <textarea rows="3" onchange="baselineData['${mapName}|||${layerName}'].issuesSummary=this.value">${data.issuesSummary}</textarea>
+        </div>
+    `;
+    form.classList.add('expanded');
+    chevron.textContent = '▼';
+}
+
+// --- Render Map Services ---
+function renderMapServices() {
+    const container = document.getElementById('mapServices');
+    container.innerHTML = '';
+    let serviceIndex = 0;
+
+    Object.keys(mapLayers).forEach(mapName => {
+        serviceIndex++;
+        const serviceId = 'map-' + serviceIndex;
+
+        const mapDiv = document.createElement('div');
+        mapDiv.className = 'map-service';
+
+        const mapHeader = document.createElement('div');
+        mapHeader.className = 'map-header';
+        mapHeader.innerHTML = `<span id="chevron-${serviceId}">▶</span>
+                               <span class="map-title">${mapName}</span>
+                               <span class="map-count">(${mapLayers[mapName].length} layers)</span>`;
+        mapDiv.appendChild(mapHeader);
+
+        const layersContainer = document.createElement('div');
+        layersContainer.className = 'layers-container';
+        layersContainer.id = 'layers-' + serviceId;
+        mapDiv.appendChild(layersContainer);
+        container.appendChild(mapDiv);
+
+        mapHeader.addEventListener('click', () => {
+            layersContainer.classList.toggle('expanded');
+            document.getElementById('chevron-' + serviceId).textContent =
+                layersContainer.classList.contains('expanded') ? '▼' : '▶';
+        });
+
+        let layerIndex = 0;
+        mapLayers[mapName].forEach(layerName => {
+            layerIndex++;
+            const layerId = serviceId + '-layer-' + layerIndex;
+            const key = mapName + '|||' + layerName;
+            const status = baselineData[key]?.status || 'not-audited';
+            const statusClass = {
+                'pass':'status-pass',
+                'fail':'status-fail',
+                'needs-work':'status-needs-work',
+                'not-audited':'status-not-audited'
+            }[status];
+
+            const layerDiv = document.createElement('div');
+            layerDiv.className = 'layer-item ' + statusClass;
+
+            const layerHeader = document.createElement('div');
+            layerHeader.className = 'layer-header';
+            layerHeader.innerHTML = `<span id="chevron-${layerId}" class="chevron">▶</span>
+                                     <span class="layer-name">${layerName}</span>
+                                     <span class="layer-status">${status}</span>`;
+            layerDiv.appendChild(layerHeader);
+
+            const layerForm = document.createElement('div');
+            layerForm.className = 'layer-form';
+            layerForm.id = 'form-' + layerId;
+            layerDiv.appendChild(layerForm);
+
+            layersContainer.appendChild(layerDiv);
+
+            layerHeader.addEventListener('click', () => toggleLayer(layerId, mapName, layerName));
+        });
+    });
+    updateStats();
+}
+
+// --- Update Stats ---
+function updateStats() {
+    let total=0,audited=0,passCount=0,needsWork=0,failCount=0;
+
+    Object.keys(baselineData).forEach(key => {
+        total++;
+        const data = baselineData[key];
+        if(data.status!=='not-audited') audited++;
+        const hasIssues = data.colorIssues||data.contrastIssues||data.symbolIssues||data.labelIssues||data.popupIssues;
+        if(data.status==='pass'&&!hasIssues) passCount++;
+        else if(data.status==='fail'||hasIssues) failCount++;
+        else if(data.status==='needs-work') needsWork++;
+    });
+
+    document.getElementById('totalLayers').textContent = total;
+    document.getElementById('auditedCount').textContent = audited;
+    document.getElementById('passCount').textContent = passCount;
+    document.getElementById('failCount').textContent = failCount;
+}
+
+// --- Load baseline from JSON ---
+function loadBaseline(event) {
+    const file = event.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const uploadedData = JSON.parse(e.target.result);
+            baselineData = {...baselineData, ...uploadedData}; // merge instead of replace
+            initializeBaseline();
+            localStorage.setItem('osmpBaselineAudit', JSON.stringify(baselineData));
+            renderMapServices();
+            alert('Baseline audit loaded successfully!');
+        } catch(err) {
+            console.error(err);
+            alert('Error loading JSON: '+err.message);
+        }
+    };
+    reader.readAsText(file);
+}
+
+// --- Save baseline ---
+function saveBaseline() {
+    try {
+        localStorage.setItem('osmpBaselineAudit', JSON.stringify(baselineData));
+        alert('Audit saved to local storage successfully!');
+    } catch(err) {
+        console.error(err);
+        alert('Error saving audit: '+err.message);
+    }
+}
+
+// --- Export baseline ---
+function exportBaseline() {
+    try {
+        const blob = new Blob([JSON.stringify(baselineData,null,2)], {type:'application/json'});
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'OSMP_Baseline_Audit.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    } catch(err) {
+        console.error(err);
+        alert('Error exporting audit: '+err.message);
+    }
+}
+
+// --- Filter layers ---
+function filterLayers() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const statusFilter = document.getElementById('filterSelect').value;
+    document.querySelectorAll('.layer-item').forEach(layer => {
+        const name = layer.querySelector('.layer-name').textContent.toLowerCase();
+        const status = layer.querySelector('.layer-status').textContent;
+        layer.style.display = (name.includes(searchTerm) && (statusFilter==='all'||statusFilter===status)) ? 'block':'none';
+    });
+}
+
+// --- Initial render ---
+initializeBaseline();
+renderMapServices();
+</script>
+</body>
+</html>
+
+

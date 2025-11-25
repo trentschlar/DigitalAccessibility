@@ -1,0 +1,24 @@
+2025-11-17 08:27:10,486 | INFO | Log started: C:\Users\boadae\Desktop\OSMP_Audit_Layers_20251117_082710.log
+2025-11-17 08:27:10,487 | INFO | Starting extraction for map: Layers
+2025-11-17 08:27:10,487 | INFO | Processing: Trailhead Fee (for non-Boulder County Residents)
+2025-11-17 08:27:10,580 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:27:10,582 | INFO | Processing: Trail Intersection Pts
+2025-11-17 08:27:10,606 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:27:10,607 | INFO | Processing: Trail Mileage Labels
+2025-11-17 08:27:10,627 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:27:10,628 | INFO | Processing: Seasonal Dog Regs
+2025-11-17 08:27:10,647 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:27:10,648 | INFO | Processing: Dog Regs on Roads
+2025-11-17 08:27:10,674 | INFO |   \u2713 Extracted: colors=2; labels=False
+2025-11-17 08:27:10,675 | INFO | Processing: Closed Trails 
+2025-11-17 08:27:10,704 | INFO |   \u2713 Extracted: colors=2; labels=False
+2025-11-17 08:27:10,705 | INFO | Processing: Dog Trail Regulation
+2025-11-17 08:27:10,737 | INFO |   \u2713 Extracted: colors=4; labels=True
+2025-11-17 08:27:10,738 | INFO | Processing: Other Boulder Area Trails
+2025-11-17 08:27:10,767 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:27:10,768 | INFO | Processing: Dog Regulation Areas
+2025-11-17 08:27:10,800 | INFO |   \u2713 Extracted: colors=2; labels=False
+2025-11-17 08:27:10,800 | INFO | Processing: Trailhead Leash Areas
+2025-11-17 08:27:10,814 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:27:10,820 | INFO | SUCCESS! Processed 10 layers
+2025-11-17 08:27:10,821 | INFO | CSV saved to: C:\Users\boadae\Desktop\OSMP_Baseline_Layers_20251117_082710.csv

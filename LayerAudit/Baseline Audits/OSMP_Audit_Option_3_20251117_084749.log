@@ -1,0 +1,20 @@
+2025-11-17 08:47:49,756 | INFO | Log started: C:\Users\boadae\Desktop\OSMP_Audit_Option_3_20251117_084749.log
+2025-11-17 08:47:49,757 | INFO | Starting extraction for map: Option 3
+2025-11-17 08:47:49,759 | INFO | Processing: Trailheads
+2025-11-17 08:47:49,833 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:47:49,834 | INFO | Processing: Trailheads
+2025-11-17 08:47:50,519 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:47:50,520 | INFO | Processing: Trailheads
+2025-11-17 08:47:50,974 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:47:50,975 | INFO | Processing: Closed Trails 
+2025-11-17 08:47:51,002 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:47:51,003 | INFO | Processing: Trail Intersection Pts
+2025-11-17 08:47:51,034 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:47:51,035 | INFO | Processing: Trails on OSMP (Senderos)
+2025-11-17 08:47:51,104 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:47:51,105 | INFO | Processing: Trail Mileage Labels
+2025-11-17 08:47:51,120 | INFO |   \u2713 Extracted: colors=1; labels=True
+2025-11-17 08:47:51,121 | INFO | Skipping non-feature/non-raster layer: Light Gray Reference (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:47:51,125 | INFO | Skipping non-feature/non-raster layer: Light Gray Base (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:47:51,132 | INFO | SUCCESS! Processed 7 layers
+2025-11-17 08:47:51,132 | INFO | CSV saved to: C:\Users\boadae\Desktop\OSMP_Baseline_Option_3_20251117_084749.csv

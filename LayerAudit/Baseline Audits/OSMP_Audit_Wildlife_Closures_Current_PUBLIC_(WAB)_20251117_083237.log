@@ -1,0 +1,93 @@
+2025-11-17 08:32:37,696 | INFO | Log started: C:\Users\boadae\Desktop\OSMP_Audit_Wildlife_Closures_Current_PUBLIC_(WAB)_20251117_083237.log
+2025-11-17 08:32:37,697 | INFO | Starting extraction for map: Wildlife Closures Current PUBLIC (WAB)
+2025-11-17 08:32:37,698 | INFO | Processing: OSMP Public Notifications
+2025-11-17 08:32:37,733 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:32:37,734 | INFO | Processing: Closed Trailheads
+2025-11-17 08:32:37,788 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:32:37,789 | INFO | Skipping non-feature/non-raster layer: Trails (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:37,790 | INFO | Skipping non-feature/non-raster layer: Trailhead (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:37,790 | INFO | Skipping non-feature/non-raster layer: Trail Intersection Pts (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:37,790 | INFO | Skipping non-feature/non-raster layer: OSMP Open Trails (Senderos abiertos) (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:37,791 | INFO | Skipping non-feature/non-raster layer: Trail Mileage Labels (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:37,791 | INFO | Skipping non-feature/non-raster layer: Other Boulder Area Trails (Otros senderos del área de Boulder) (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,292 | ERROR | ERROR processing layer: UNKNOWN
+Traceback (most recent call last):
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 89, in _get
+    return convertArcObjectToPythonObject(getattr(self._arc_object, attr_name))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[1]", line 498, in extract_baseline_data
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 92, in _get
+    raise AttributeError(
+AttributeError: The attribute 'name' is not supported on this instance of Layer.
+2025-11-17 08:32:38,295 | INFO | Skipping non-feature/non-raster layer: Wildlife Closure Areas (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,295 | INFO | Skipping non-feature/non-raster layer: Climbing Access (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,298 | ERROR | ERROR processing layer: UNKNOWN
+Traceback (most recent call last):
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 89, in _get
+    return convertArcObjectToPythonObject(getattr(self._arc_object, attr_name))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[1]", line 498, in extract_baseline_data
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 92, in _get
+    raise AttributeError(
+AttributeError: The attribute 'name' is not supported on this instance of Layer.
+2025-11-17 08:32:38,301 | ERROR | ERROR processing layer: UNKNOWN
+Traceback (most recent call last):
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 89, in _get
+    return convertArcObjectToPythonObject(getattr(self._arc_object, attr_name))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[1]", line 498, in extract_baseline_data
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 92, in _get
+    raise AttributeError(
+AttributeError: The attribute 'name' is not supported on this instance of Layer.
+2025-11-17 08:32:38,317 | ERROR | ERROR processing layer: UNKNOWN
+Traceback (most recent call last):
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 89, in _get
+    return convertArcObjectToPythonObject(getattr(self._arc_object, attr_name))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[1]", line 498, in extract_baseline_data
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 92, in _get
+    raise AttributeError(
+AttributeError: The attribute 'name' is not supported on this instance of Layer.
+2025-11-17 08:32:38,319 | INFO | Skipping non-feature/non-raster layer: RestrictedAccess (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,320 | INFO | Skipping non-feature/non-raster layer: No Public Access  (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,321 | INFO | Skipping non-feature/non-raster layer: Current Wildlife Closures (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,321 | INFO | Skipping non-feature/non-raster layer: Habitat Conservation Areas (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,322 | INFO | Skipping non-feature/non-raster layer: Off-trail Use Prohibited (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,322 | ERROR | ERROR processing layer: UNKNOWN
+Traceback (most recent call last):
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 89, in _get
+    return convertArcObjectToPythonObject(getattr(self._arc_object, attr_name))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[1]", line 498, in extract_baseline_data
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 92, in _get
+    raise AttributeError(
+AttributeError: The attribute 'name' is not supported on this instance of Layer.
+2025-11-17 08:32:38,325 | INFO | Skipping non-feature/non-raster layer: World Topographic Map (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,326 | INFO | Skipping non-feature/non-raster layer: World Hillshade (<class 'arcpy._mp.Layer'>)
+2025-11-17 08:32:38,332 | INFO | SUCCESS! Processed 2 layers
+2025-11-17 08:32:38,332 | INFO | CSV saved to: C:\Users\boadae\Desktop\OSMP_Baseline_Wildlife_Closures_Current_PUBLIC_(WAB)_20251117_083237.csv

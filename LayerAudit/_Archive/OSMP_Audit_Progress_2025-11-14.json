@@ -1,0 +1,2548 @@
+{
+  "Dog Regulations|||OSMP Dog Regulations – Trail Intersection Points": {
+    "useOfColor": {
+      "status": "pass",
+      "notes": "Added strokes to symbols for contrast. Color blind friendly palette implemented.",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "in-progress",
+      "notes": "Symbols updated with strokes. Needs final contrast ratio verification.",
+      "contrastRatio": "Pending measurement"
+    },
+    "symbolology": {
+      "status": "pass",
+      "notes": "Updated to color blind friendly palette. Added black strokes."
+    },
+    "labels": {
+      "status": "in-progress",
+      "notes": "Updated fonts: Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)."
+    },
+    "popups": {
+      "status": "pass",
+      "notes": "HTML configured with appropriate fields and aliases. Alt text added to icons."
+    },
+    "popupColors": {
+      "headerBg": "#27443A",
+      "headerText": "white",
+      "restrictedBg": "#741919",
+      "restrictedText": "white",
+      "bodyText": "black",
+      "fontSize": "18px",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "TB",
+    "overallStatus": "in-progress"
+  },
+  "Dog Regulations|||OSMP Dog Regulations – Trail Milage Labels": {
+    "useOfColor": {
+      "status": "pass",
+      "notes": "Added strokes to symbols for contrast. Color blind friendly palette implemented.",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "in-progress",
+      "notes": "Symbols updated with strokes. Needs final contrast ratio verification.",
+      "contrastRatio": "Pending measurement"
+    },
+    "symbolology": {
+      "status": "pass",
+      "notes": "Updated to color blind friendly palette. Added black strokes."
+    },
+    "labels": {
+      "status": "in-progress",
+      "notes": "Updated fonts: Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)."
+    },
+    "popups": {
+      "status": "pass",
+      "notes": "HTML configured with appropriate fields and aliases. Alt text added to icons."
+    },
+    "popupColors": {
+      "headerBg": "#27443A",
+      "headerText": "white",
+      "restrictedBg": "#741919",
+      "restrictedText": "white",
+      "bodyText": "black",
+      "fontSize": "18px",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "TB",
+    "overallStatus": "in-progress"
+  },
+  "Dog Regulations|||OSMP Dog Regulations – Seasonal Dog Regs": {
+    "useOfColor": {
+      "status": "pass",
+      "notes": "Added strokes to symbols for contrast. Color blind friendly palette implemented.",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "in-progress",
+      "notes": "Symbols updated with strokes. Needs final contrast ratio verification.",
+      "contrastRatio": "Pending measurement"
+    },
+    "symbolology": {
+      "status": "pass",
+      "notes": "Updated to color blind friendly palette. Added black strokes."
+    },
+    "labels": {
+      "status": "in-progress",
+      "notes": "Updated fonts: Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)."
+    },
+    "popups": {
+      "status": "pass",
+      "notes": "HTML configured with appropriate fields and aliases. Alt text added to icons."
+    },
+    "popupColors": {
+      "headerBg": "#27443A",
+      "headerText": "white",
+      "restrictedBg": "#741919",
+      "restrictedText": "white",
+      "bodyText": "black",
+      "fontSize": "18px",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "TB",
+    "overallStatus": "in-progress"
+  },
+  "Dog Regulations|||OSMP Dog Regulations – Dog Regs on Roads": {
+    "useOfColor": {
+      "status": "pass",
+      "notes": "Added strokes to symbols for contrast. Color blind friendly palette implemented.",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "in-progress",
+      "notes": "Symbols updated with strokes. Needs final contrast ratio verification.",
+      "contrastRatio": "Pending measurement"
+    },
+    "symbolology": {
+      "status": "pass",
+      "notes": "Updated to color blind friendly palette. Added black strokes."
+    },
+    "labels": {
+      "status": "in-progress",
+      "notes": "Updated fonts: Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)."
+    },
+    "popups": {
+      "status": "pass",
+      "notes": "HTML configured with appropriate fields and aliases. Alt text added to icons."
+    },
+    "popupColors": {
+      "headerBg": "#27443A",
+      "headerText": "white",
+      "restrictedBg": "#741919",
+      "restrictedText": "white",
+      "bodyText": "black",
+      "fontSize": "18px",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "TB",
+    "overallStatus": "in-progress"
+  },
+  "Dog Regulations|||OSMP Dog Regulations – Dog Trail Regulation": {
+    "useOfColor": {
+      "status": "pass",
+      "notes": "Added strokes to symbols for contrast. Color blind friendly palette implemented.",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "in-progress",
+      "notes": "Symbols updated with strokes. Needs final contrast ratio verification.",
+      "contrastRatio": "Pending measurement"
+    },
+    "symbolology": {
+      "status": "pass",
+      "notes": "Updated to color blind friendly palette. Added black strokes."
+    },
+    "labels": {
+      "status": "in-progress",
+      "notes": "Updated fonts: Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)."
+    },
+    "popups": {
+      "status": "pass",
+      "notes": "HTML configured with appropriate fields and aliases. Alt text added to icons."
+    },
+    "popupColors": {
+      "headerBg": "#27443A",
+      "headerText": "white",
+      "restrictedBg": "#741919",
+      "restrictedText": "white",
+      "bodyText": "black",
+      "fontSize": "18px",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "TB",
+    "overallStatus": "in-progress"
+  },
+  "Dog Regulations|||OSMP Dog Regulations – Dog Regulation Areas": {
+    "useOfColor": {
+      "status": "pass",
+      "notes": "Added strokes to symbols for contrast. Color blind friendly palette implemented.",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "in-progress",
+      "notes": "Symbols updated with strokes. Needs final contrast ratio verification.",
+      "contrastRatio": "Pending measurement"
+    },
+    "symbolology": {
+      "status": "pass",
+      "notes": "Updated to color blind friendly palette. Added black strokes."
+    },
+    "labels": {
+      "status": "in-progress",
+      "notes": "Updated fonts: Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)."
+    },
+    "popups": {
+      "status": "pass",
+      "notes": "HTML configured with appropriate fields and aliases. Alt text added to icons."
+    },
+    "popupColors": {
+      "headerBg": "#27443A",
+      "headerText": "white",
+      "restrictedBg": "#741919",
+      "restrictedText": "white",
+      "bodyText": "black",
+      "fontSize": "18px",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "TB",
+    "overallStatus": "in-progress"
+  },
+  "Dog Regulations|||OSMP Dog Regulations – Trailhead Leash Areas": {
+    "useOfColor": {
+      "status": "pass",
+      "notes": "Added strokes to symbols for contrast. Color blind friendly palette implemented.",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "in-progress",
+      "notes": "Symbols updated with strokes. Needs final contrast ratio verification.",
+      "contrastRatio": "Pending measurement"
+    },
+    "symbolology": {
+      "status": "pass",
+      "notes": "Updated to color blind friendly palette. Added black strokes."
+    },
+    "labels": {
+      "status": "in-progress",
+      "notes": "Updated fonts: Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)."
+    },
+    "popups": {
+      "status": "pass",
+      "notes": "HTML configured with appropriate fields and aliases. Alt text added to icons."
+    },
+    "popupColors": {
+      "headerBg": "#27443A",
+      "headerText": "white",
+      "restrictedBg": "#741919",
+      "restrictedText": "white",
+      "bodyText": "black",
+      "fontSize": "18px",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "TB",
+    "overallStatus": "in-progress"
+  },
+  "Dog Regulations|||Bridges": {
+    "useOfColor": {
+      "status": "pass",
+      "notes": "Added strokes to symbols for contrast. Color blind friendly palette implemented.",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "in-progress",
+      "notes": "Symbols updated with strokes. Needs final contrast ratio verification.",
+      "contrastRatio": "Pending measurement"
+    },
+    "symbolology": {
+      "status": "pass",
+      "notes": "Updated to color blind friendly palette. Added black strokes."
+    },
+    "labels": {
+      "status": "in-progress",
+      "notes": "Updated fonts: Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)."
+    },
+    "popups": {
+      "status": "pass",
+      "notes": "HTML configured with appropriate fields and aliases. Alt text added to icons."
+    },
+    "popupColors": {
+      "headerBg": "#27443A",
+      "headerText": "white",
+      "restrictedBg": "#741919",
+      "restrictedText": "white",
+      "bodyText": "black",
+      "fontSize": "18px",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "TB",
+    "overallStatus": "in-progress"
+  },
+  "OSMP Trails|||OSMP Public Notifications": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Closed Trailheads": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Other Boulder Area Trail Closures": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Trail Difficulty": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Wide Trail Opportunities in City of Boulder": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||OSMP Trails - Trailheads": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||OSMP Trails – Trail Intersection Points": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||OSMP Trails – OSMP Closed Trails": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||OSMP Trails – OSMP Open Trails": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||OSMP Trails – Trail Milage Labels": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Other City of Boulder Trails and Paths": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Other Boulder Area Trails and Paths": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Restricted Access – No Public Access": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Restricted Access – Current Wildlife Closures": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Restricted Access – Habitat Conservation Area": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Restricted Access – No Public Access (Temporary)": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "OSMP Trails|||Restricted Access – Off-trail Use Prohibited": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||OSMP Public Notifications": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Closed Trailheads": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Other Boulder Area Trail Closures": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||OSMP Dog Regulations – Trailhead Fee (for non-Boulder County Residents)": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||OSMP Dog Regulations –Closed Trails": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Other City of Boulder Trails and Paths": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Other Boulder Area Trails and Paths": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Restricted Access – No Public Access": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Restricted Access – Current Wildlife Closures": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Restricted Access – Habitat Conservation Area": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Restricted Access – No Public Access (Temporary)": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Restricted Access – Off-trail Use Prohibited": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Dog Regulations|||Water Regs": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||OSMP Public Notifications": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Closed Trailheads": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Seasonal Dog Regulations": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Other Boulder Area Trail Closures": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||OSMP Trails - Trailheads": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||OSMP Trails – Trail Intersection Points": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||OSMP Trails – OSMP Closed Trails": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||OSMP Trails – OSMP Open Trails": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||OSMP Trails – Trail Milage Labels": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Other City of Boulder Trails and Paths": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Other Boulder Area Trails and Paths": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Wildlife Closure Areas – Climbing Formations": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Wildlife Closure Areas – Climbing Access": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Wildlife Closure Areas – Current Wildlife Closures": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Wildlife Closure Areas – Habitat Conservation Areas": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||OSMP Wildlife Closures - All": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Restricted Access – No Public Access": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Restricted Access – Current Wildlife Closures": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Restricted Access – Habitat Conservation Area": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Restricted Access – No Public Access (Temporary)": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Restricted Access – Off-trail Use Prohibited": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Wildlife Closures|||Water Regs": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Horse Regulations|||Horse Trailer Parking at OSMP Trailheads": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Horse Regulations|||Trail Intersection Pts": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Horse Regulations|||Closed Trails": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Horse Regulations|||Trail Milage Labels": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Horse Regulations|||Trail Regulations (Horse)": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Horse Regulations|||Area Regulations (Horse)": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  },
+  "Horse Regulations|||Other Boulder Area Trails": {
+    "useOfColor": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "nonTextContrast": {
+      "status": "not-started",
+      "notes": "",
+      "contrastRatio": ""
+    },
+    "symbolology": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "labels": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popups": {
+      "status": "not-started",
+      "notes": ""
+    },
+    "popupColors": {
+      "headerBg": "",
+      "headerText": "",
+      "restrictedBg": "",
+      "restrictedText": "",
+      "bodyText": "",
+      "fontSize": "",
+      "contrastChecked": false
+    },
+    "redesignNeeded": false,
+    "implementationDate": "",
+    "verificationDate": "",
+    "auditor": "",
+    "overallStatus": "not-started"
+  }
+}

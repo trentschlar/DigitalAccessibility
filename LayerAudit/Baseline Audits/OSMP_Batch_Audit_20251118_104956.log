@@ -1,0 +1,794 @@
+2025-11-18 10:49:56,411 | INFO | Log started: Y:\LayerAudit\Baseline Audits\OSMP_Batch_Audit_20251118_104956.log
+2025-11-18 10:49:56,415 | INFO | ======================================================================
+2025-11-18 10:49:56,418 | INFO | OSMP BATCH LAYER FILE AUDIT
+2025-11-18 10:49:56,421 | INFO | ======================================================================
+2025-11-18 10:49:56,424 | INFO | Root directory: E:\Layers
+2025-11-18 10:49:56,452 | INFO | Searching for .lyr and .lyrx files...
+2025-11-18 10:49:58,596 | INFO | Skipped 134 directories containing '_Archive' in path
+2025-11-18 10:49:58,599 | INFO | Found 736 layer files
+2025-11-18 10:49:58,603 | INFO | Processing: E:\Layers\OSMP Generic Features gathered in Collector, 2020.lyr
+2025-11-18 10:50:10,861 | DEBUG | Skipping group layer: OSMP Generic Features gathered in Collector, 2020
+2025-11-18 10:50:10,865 | INFO |   Analyzing layer: Ag Points
+2025-11-18 10:50:10,959 | DEBUG |   Layer Ag Points - showLabels: False
+2025-11-18 10:50:10,972 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:10,975 | INFO |   Analyzing layer: Forestry Points
+2025-11-18 10:50:10,996 | DEBUG |   Layer Forestry Points - showLabels: False
+2025-11-18 10:50:11,012 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,015 | DEBUG | Skipping group layer: Hydro Features
+2025-11-18 10:50:11,021 | INFO |   Analyzing layer: Hydro Points
+2025-11-18 10:50:11,039 | DEBUG |   Layer Hydro Points - showLabels: False
+2025-11-18 10:50:11,065 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,068 | INFO |   Analyzing layer: Hydro Lines
+2025-11-18 10:50:11,086 | DEBUG |   Layer Hydro Lines - showLabels: False
+2025-11-18 10:50:11,104 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,114 | INFO |   Analyzing layer: Hydro  Polygons
+2025-11-18 10:50:11,131 | DEBUG |   Layer Hydro  Polygons - showLabels: False
+2025-11-18 10:50:11,148 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,151 | DEBUG | Skipping group layer: P & D Features
+2025-11-18 10:50:11,155 | INFO |   Analyzing layer: P & D Points
+2025-11-18 10:50:11,177 | DEBUG |   Layer P & D Points - showLabels: False
+2025-11-18 10:50:11,197 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,201 | INFO |   Analyzing layer: P& D Lines
+2025-11-18 10:50:11,215 | DEBUG |   Layer P& D Lines - showLabels: False
+2025-11-18 10:50:11,232 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,235 | DEBUG | Skipping group layer: Rangers Features
+2025-11-18 10:50:11,238 | INFO |   Analyzing layer: Ranger Points
+2025-11-18 10:50:11,262 | DEBUG |   Layer Ranger Points - showLabels: False
+2025-11-18 10:50:11,277 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,280 | INFO |   Analyzing layer: Ranger Polygons
+2025-11-18 10:50:11,295 | DEBUG |   Layer Ranger Polygons - showLabels: False
+2025-11-18 10:50:11,308 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,311 | DEBUG | Skipping group layer: Trails Features
+2025-11-18 10:50:11,314 | INFO |   Analyzing layer: Trails Points
+2025-11-18 10:50:11,332 | DEBUG |   Layer Trails Points - showLabels: False
+2025-11-18 10:50:11,349 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,352 | INFO |   Analyzing layer: Trails Lines
+2025-11-18 10:50:11,368 | DEBUG |   Layer Trails Lines - showLabels: False
+2025-11-18 10:50:11,386 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,389 | DEBUG | Skipping group layer: Veg Mgmt Features
+2025-11-18 10:50:11,393 | INFO |   Analyzing layer: Veg Mgmt Points
+2025-11-18 10:50:11,418 | DEBUG |   Layer Veg Mgmt Points - showLabels: False
+2025-11-18 10:50:11,433 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,436 | INFO |   Analyzing layer: Veg Mgmt Lines
+2025-11-18 10:50:11,454 | DEBUG |   Layer Veg Mgmt Lines - showLabels: False
+2025-11-18 10:50:11,471 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,476 | INFO |   Analyzing layer: Veg Mgmt Polys
+2025-11-18 10:50:11,496 | DEBUG |   Layer Veg Mgmt Polys - showLabels: False
+2025-11-18 10:50:11,532 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:11,552 | INFO | Processing: E:\Layers\OSMP Generic Features gathered in Collector, 2021.lyr
+2025-11-18 10:50:17,903 | DEBUG | Skipping group layer: OSMP Generic Features gathered in Collector, 2021
+2025-11-18 10:50:17,919 | DEBUG | Skipping group layer: Ag Features
+2025-11-18 10:50:17,919 | INFO |   Analyzing layer: Ag Points
+2025-11-18 10:50:17,939 | DEBUG |   Layer Ag Points - showLabels: False
+2025-11-18 10:50:17,963 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:17,971 | INFO |   Analyzing layer: Ag Polygons
+2025-11-18 10:50:17,979 | DEBUG |   Layer Ag Polygons - showLabels: False
+2025-11-18 10:50:17,995 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,012 | INFO |   Analyzing layer: Forestry Points
+2025-11-18 10:50:18,030 | DEBUG |   Layer Forestry Points - showLabels: False
+2025-11-18 10:50:18,046 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,054 | INFO |   Analyzing layer: Hydro Lines
+2025-11-18 10:50:18,068 | DEBUG |   Layer Hydro Lines - showLabels: False
+2025-11-18 10:50:18,079 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,079 | INFO |   Analyzing layer: P & D Points
+2025-11-18 10:50:18,095 | DEBUG |   Layer P & D Points - showLabels: False
+2025-11-18 10:50:18,121 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,121 | DEBUG | Skipping group layer: Restoration Features
+2025-11-18 10:50:18,121 | INFO |   Analyzing layer: Restoration Points
+2025-11-18 10:50:18,149 | DEBUG |   Layer Restoration Points - showLabels: False
+2025-11-18 10:50:18,170 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,179 | INFO |   Analyzing layer: Restoration Polygons
+2025-11-18 10:50:18,196 | DEBUG |   Layer Restoration Polygons - showLabels: False
+2025-11-18 10:50:18,212 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,212 | INFO |   Analyzing layer: Science Office Points
+2025-11-18 10:50:18,230 | DEBUG |   Layer Science Office Points - showLabels: False
+2025-11-18 10:50:18,262 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,262 | DEBUG | Skipping group layer: Trails Features
+2025-11-18 10:50:18,269 | INFO |   Analyzing layer: Trails Points
+2025-11-18 10:50:18,288 | DEBUG |   Layer Trails Points - showLabels: False
+2025-11-18 10:50:18,312 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,312 | INFO |   Analyzing layer: Trails Lines
+2025-11-18 10:50:18,329 | DEBUG |   Layer Trails Lines - showLabels: False
+2025-11-18 10:50:18,336 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,345 | INFO |   Analyzing layer: Polygons Trails
+2025-11-18 10:50:18,362 | DEBUG |   Layer Polygons Trails - showLabels: False
+2025-11-18 10:50:18,375 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,379 | DEBUG | Skipping group layer: Veg Mgmt Features
+2025-11-18 10:50:18,387 | INFO |   Analyzing layer: Veg Mgmt Points
+2025-11-18 10:50:18,420 | DEBUG |   Layer Veg Mgmt Points - showLabels: False
+2025-11-18 10:50:18,445 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,453 | INFO |   Analyzing layer: Veg Mgmt Lines
+2025-11-18 10:50:18,465 | DEBUG |   Layer Veg Mgmt Lines - showLabels: False
+2025-11-18 10:50:18,480 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,480 | INFO |   Analyzing layer: Veg Mgmt Polygons
+2025-11-18 10:50:18,495 | DEBUG |   Layer Veg Mgmt Polygons - showLabels: False
+2025-11-18 10:50:18,512 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,520 | INFO |   Analyzing layer: Wildlife Points
+2025-11-18 10:50:18,545 | DEBUG |   Layer Wildlife Points - showLabels: False
+2025-11-18 10:50:18,562 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:18,570 | INFO | Processing: E:\Layers\OSMP Generic Features gathered in Collector, 2022.lyr
+2025-11-18 10:50:27,261 | DEBUG | Skipping group layer: OSMP Generic Features gathered in Collector, 2022
+2025-11-18 10:50:27,261 | DEBUG | Skipping group layer: Ag Features
+2025-11-18 10:50:27,276 | INFO |   Analyzing layer: Ag Points
+2025-11-18 10:50:27,292 | DEBUG |   Layer Ag Points - showLabels: False
+2025-11-18 10:50:27,304 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,304 | INFO |   Analyzing layer: Ag Lines
+2025-11-18 10:50:27,321 | DEBUG |   Layer Ag Lines - showLabels: False
+2025-11-18 10:50:27,340 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,341 | INFO |   Analyzing layer: Ag Polygons
+2025-11-18 10:50:27,354 | DEBUG |   Layer Ag Polygons - showLabels: False
+2025-11-18 10:50:27,363 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,371 | DEBUG | Skipping group layer: Forestry Features
+2025-11-18 10:50:27,372 | INFO |   Analyzing layer: Forestry Points
+2025-11-18 10:50:27,405 | DEBUG |   Layer Forestry Points - showLabels: False
+2025-11-18 10:50:27,432 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,432 | INFO |   Analyzing layer: Forestry Lines
+2025-11-18 10:50:27,448 | DEBUG |   Layer Forestry Lines - showLabels: False
+2025-11-18 10:50:27,455 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,463 | INFO |   Analyzing layer: Forestry Polygons
+2025-11-18 10:50:27,471 | DEBUG |   Layer Forestry Polygons - showLabels: False
+2025-11-18 10:50:27,489 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,489 | DEBUG | Skipping group layer: Hydro Features
+2025-11-18 10:50:27,499 | INFO |   Analyzing layer: Hydro Points
+2025-11-18 10:50:27,515 | DEBUG |   Layer Hydro Points - showLabels: False
+2025-11-18 10:50:27,530 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,538 | INFO |   Analyzing layer: Hydro Lines
+2025-11-18 10:50:27,552 | DEBUG |   Layer Hydro Lines - showLabels: False
+2025-11-18 10:50:27,564 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,564 | INFO |   Analyzing layer: Ranger Point
+2025-11-18 10:50:27,588 | DEBUG |   Layer Ranger Point - showLabels: False
+2025-11-18 10:50:27,604 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,612 | DEBUG | Skipping group layer: Restoration Features
+2025-11-18 10:50:27,613 | INFO |   Analyzing layer: Restoration Points
+2025-11-18 10:50:27,630 | DEBUG |   Layer Restoration Points - showLabels: False
+2025-11-18 10:50:27,646 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,654 | INFO |   Analyzing layer: Restoration Polygons
+2025-11-18 10:50:27,671 | DEBUG |   Layer Restoration Polygons - showLabels: False
+2025-11-18 10:50:27,682 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,682 | DEBUG | Skipping group layer: Science Office Features
+2025-11-18 10:50:27,682 | INFO |   Analyzing layer: Science Office Points
+2025-11-18 10:50:27,713 | DEBUG |   Layer Science Office Points - showLabels: False
+2025-11-18 10:50:27,730 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,730 | INFO |   Analyzing layer: Science Office Lines
+2025-11-18 10:50:27,746 | DEBUG |   Layer Science Office Lines - showLabels: False
+2025-11-18 10:50:27,748 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,763 | INFO |   Analyzing layer: Science Office Polygons
+2025-11-18 10:50:27,764 | DEBUG |   Layer Science Office Polygons - showLabels: False
+2025-11-18 10:50:27,788 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,788 | DEBUG | Skipping group layer: Trails Features
+2025-11-18 10:50:27,788 | INFO |   Analyzing layer: Trails Points
+2025-11-18 10:50:27,814 | DEBUG |   Layer Trails Points - showLabels: False
+2025-11-18 10:50:27,829 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,829 | INFO |   Analyzing layer: Trails Lines
+2025-11-18 10:50:27,847 | DEBUG |   Layer Trails Lines - showLabels: False
+2025-11-18 10:50:27,856 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,863 | INFO |   Analyzing layer: Polygons Trails
+2025-11-18 10:50:27,880 | DEBUG |   Layer Polygons Trails - showLabels: False
+2025-11-18 10:50:27,892 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,892 | DEBUG | Skipping group layer: Veg Mgmt Features
+2025-11-18 10:50:27,897 | INFO |   Analyzing layer: Veg Mgmt Points
+2025-11-18 10:50:27,930 | DEBUG |   Layer Veg Mgmt Points - showLabels: False
+2025-11-18 10:50:27,946 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,946 | INFO |   Analyzing layer: Veg Mgmt Lines
+2025-11-18 10:50:27,963 | DEBUG |   Layer Veg Mgmt Lines - showLabels: False
+2025-11-18 10:50:27,975 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,979 | INFO |   Analyzing layer: Veg Mgmt Polygons
+2025-11-18 10:50:27,995 | DEBUG |   Layer Veg Mgmt Polygons - showLabels: False
+2025-11-18 10:50:27,997 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:27,997 | DEBUG | Skipping group layer: Wetlands Features
+2025-11-18 10:50:28,013 | INFO |   Analyzing layer: Wetlands Points
+2025-11-18 10:50:28,036 | DEBUG |   Layer Wetlands Points - showLabels: False
+2025-11-18 10:50:28,046 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:28,054 | INFO |   Analyzing layer: Wetlands Lines
+2025-11-18 10:50:28,067 | DEBUG |   Layer Wetlands Lines - showLabels: False
+2025-11-18 10:50:28,080 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:28,080 | INFO |   Analyzing layer: Wetlands Polys
+2025-11-18 10:50:28,096 | DEBUG |   Layer Wetlands Polys - showLabels: False
+2025-11-18 10:50:28,113 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:28,126 | DEBUG | Skipping group layer: Wildlife Features
+2025-11-18 10:50:28,139 | INFO |   Analyzing layer: Wildlife Points
+2025-11-18 10:50:28,163 | DEBUG |   Layer Wildlife Points - showLabels: False
+2025-11-18 10:50:28,180 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:28,180 | INFO |   Analyzing layer: Wildlife Polygons
+2025-11-18 10:50:28,195 | DEBUG |   Layer Wildlife Polygons - showLabels: False
+2025-11-18 10:50:28,208 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:28,213 | INFO | Processing: E:\Layers\OSMP Generic Features gathered in Field Maps ('LIVE' Data).lyr
+2025-11-18 10:50:31,961 | DEBUG | Skipping group layer: OSMP Generic Features gathered in Field Maps ('LIVE' Data)
+2025-11-18 10:50:31,961 | INFO |   Analyzing layer: Points
+2025-11-18 10:50:31,983 | DEBUG |   Layer Points - showLabels: False
+2025-11-18 10:50:32,001 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:32,001 | INFO |   Analyzing layer: Lines
+2025-11-18 10:50:32,019 | DEBUG |   Layer Lines - showLabels: False
+2025-11-18 10:50:32,036 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:32,040 | INFO |   Analyzing layer: Polygons
+2025-11-18 10:50:32,053 | DEBUG |   Layer Polygons - showLabels: False
+2025-11-18 10:50:32,093 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:32,100 | INFO | Processing: E:\Layers\OSMP Generic Features gathered in Field Maps, 2023.lyr
+2025-11-18 10:50:38,971 | DEBUG | Skipping group layer: OSMP Generic Features gathered in Field Maps, 2023
+2025-11-18 10:50:38,981 | DEBUG | Skipping group layer: Ag Features
+2025-11-18 10:50:38,981 | INFO |   Analyzing layer: Ag Points
+2025-11-18 10:50:39,004 | DEBUG |   Layer Ag Points - showLabels: False
+2025-11-18 10:50:39,028 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,031 | INFO |   Analyzing layer: Ag Lines
+2025-11-18 10:50:39,044 | DEBUG |   Layer Ag Lines - showLabels: False
+2025-11-18 10:50:39,053 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,062 | INFO |   Analyzing layer: Ag Polygons
+2025-11-18 10:50:39,077 | DEBUG |   Layer Ag Polygons - showLabels: False
+2025-11-18 10:50:39,093 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,101 | INFO |   Analyzing layer: Fire Points
+2025-11-18 10:50:39,117 | DEBUG |   Layer Fire Points - showLabels: False
+2025-11-18 10:50:39,134 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,141 | INFO |   Analyzing layer: Forestry Points
+2025-11-18 10:50:39,165 | DEBUG |   Layer Forestry Points - showLabels: False
+2025-11-18 10:50:39,181 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,181 | DEBUG | Skipping group layer: Hydro Features
+2025-11-18 10:50:39,189 | INFO |   Analyzing layer: Hydro Points
+2025-11-18 10:50:39,205 | DEBUG |   Layer Hydro Points - showLabels: False
+2025-11-18 10:50:39,232 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,232 | INFO |   Analyzing layer: Hydro Lines
+2025-11-18 10:50:39,246 | DEBUG |   Layer Hydro Lines - showLabels: False
+2025-11-18 10:50:39,264 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,264 | INFO |   Analyzing layer: Plannig & Design Lines
+2025-11-18 10:50:39,281 | DEBUG |   Layer Plannig & Design Lines - showLabels: False
+2025-11-18 10:50:39,292 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,297 | INFO |   Analyzing layer: Restoration Points
+2025-11-18 10:50:39,314 | DEBUG |   Layer Restoration Points - showLabels: False
+2025-11-18 10:50:39,331 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,339 | INFO |   Analyzing layer: Science Office Points
+2025-11-18 10:50:39,355 | DEBUG |   Layer Science Office Points - showLabels: False
+2025-11-18 10:50:39,381 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,389 | DEBUG | Skipping group layer: Trails Features
+2025-11-18 10:50:39,389 | INFO |   Analyzing layer: Trails Points
+2025-11-18 10:50:39,414 | DEBUG |   Layer Trails Points - showLabels: False
+2025-11-18 10:50:39,431 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,439 | INFO |   Analyzing layer: Trails Lines
+2025-11-18 10:50:39,453 | DEBUG |   Layer Trails Lines - showLabels: False
+2025-11-18 10:50:39,471 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,475 | DEBUG | Skipping group layer: Veg Stewardship Features
+2025-11-18 10:50:39,475 | INFO |   Analyzing layer: Veg Stewardship Points
+2025-11-18 10:50:39,497 | DEBUG |   Layer Veg Stewardship Points - showLabels: False
+2025-11-18 10:50:39,522 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,522 | INFO |   Analyzing layer: Veg Stewardship Lines
+2025-11-18 10:50:39,547 | DEBUG |   Layer Veg Stewardship Lines - showLabels: False
+2025-11-18 10:50:39,564 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,564 | DEBUG | Skipping group layer: Wetlands Features
+2025-11-18 10:50:39,572 | INFO |   Analyzing layer: Wetlands Points
+2025-11-18 10:50:39,597 | DEBUG |   Layer Wetlands Points - showLabels: False
+2025-11-18 10:50:39,614 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,614 | INFO |   Analyzing layer: Wetlands Lines
+2025-11-18 10:50:39,642 | DEBUG |   Layer Wetlands Lines - showLabels: False
+2025-11-18 10:50:39,660 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,664 | INFO |   Analyzing layer: Wildlife Points
+2025-11-18 10:50:39,687 | DEBUG |   Layer Wildlife Points - showLabels: False
+2025-11-18 10:50:39,703 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:39,711 | INFO | Processing: E:\Layers\OSMP Generic Features gathered in Field Maps, 2024.lyrx
+2025-11-18 10:50:50,585 | DEBUG | Skipping group layer: OSMP Generic Features gathered in Field Maps, 2024
+2025-11-18 10:50:50,585 | DEBUG | Skipping group layer: Ag Features
+2025-11-18 10:50:50,585 | INFO |   Analyzing layer: Ag Points
+2025-11-18 10:50:50,608 | DEBUG |   Layer Ag Points - showLabels: False
+2025-11-18 10:50:50,623 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,623 | INFO |   Analyzing layer: Ag Lines
+2025-11-18 10:50:50,639 | DEBUG |   Layer Ag Lines - showLabels: False
+2025-11-18 10:50:50,648 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,656 | INFO |   Analyzing layer: Ag Polygons
+2025-11-18 10:50:50,666 | DEBUG |   Layer Ag Polygons - showLabels: False
+2025-11-18 10:50:50,690 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,690 | DEBUG | Skipping group layer: Fire Features
+2025-11-18 10:50:50,701 | INFO |   Analyzing layer: Fire Points
+2025-11-18 10:50:50,715 | DEBUG |   Layer Fire Points - showLabels: False
+2025-11-18 10:50:50,732 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,739 | INFO |   Analyzing layer: Fire Polygons
+2025-11-18 10:50:50,749 | DEBUG |   Layer Fire Polygons - showLabels: False
+2025-11-18 10:50:50,749 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,763 | INFO |   Analyzing layer: Forestry Points
+2025-11-18 10:50:50,773 | DEBUG |   Layer Forestry Points - showLabels: False
+2025-11-18 10:50:50,798 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,798 | DEBUG | Skipping group layer: Hydro Features
+2025-11-18 10:50:50,806 | INFO |   Analyzing layer: Hydro Points
+2025-11-18 10:50:50,817 | DEBUG |   Layer Hydro Points - showLabels: False
+2025-11-18 10:50:50,839 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,839 | INFO |   Analyzing layer: Hydro Lines
+2025-11-18 10:50:50,856 | DEBUG |   Layer Hydro Lines - showLabels: False
+2025-11-18 10:50:50,865 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,873 | DEBUG | Skipping group layer: Planning & Design Features
+2025-11-18 10:50:50,873 | INFO |   Analyzing layer: Planning & Design Points
+2025-11-18 10:50:50,898 | DEBUG |   Layer Planning & Design Points - showLabels: False
+2025-11-18 10:50:50,915 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,915 | INFO |   Analyzing layer: Plannig & Design Lines
+2025-11-18 10:50:50,932 | DEBUG |   Layer Plannig & Design Lines - showLabels: False
+2025-11-18 10:50:50,940 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,948 | INFO |   Analyzing layer: Planning & Design Polygons
+2025-11-18 10:50:50,961 | DEBUG |   Layer Planning & Design Polygons - showLabels: False
+2025-11-18 10:50:50,973 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:50,977 | DEBUG | Skipping group layer: Restoration Features
+2025-11-18 10:50:50,982 | INFO |   Analyzing layer: Restoration Points
+2025-11-18 10:50:50,998 | DEBUG |   Layer Restoration Points - showLabels: False
+2025-11-18 10:50:51,015 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,015 | INFO |   Analyzing layer: Restoration Polygons
+2025-11-18 10:50:51,032 | DEBUG |   Layer Restoration Polygons - showLabels: False
+2025-11-18 10:50:51,040 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,040 | DEBUG | Skipping group layer: Science and Climate Features
+2025-11-18 10:50:51,048 | INFO |   Analyzing layer: Science and Climate Points
+2025-11-18 10:50:51,065 | DEBUG |   Layer Science and Climate Points - showLabels: False
+2025-11-18 10:50:51,083 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,089 | INFO |   Analyzing layer: Science and Climate Lines
+2025-11-18 10:50:51,102 | DEBUG |   Layer Science and Climate Lines - showLabels: False
+2025-11-18 10:50:51,113 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,115 | INFO |   Analyzing layer: Science and Climate Polygons
+2025-11-18 10:50:51,124 | DEBUG |   Layer Science and Climate Polygons - showLabels: False
+2025-11-18 10:50:51,132 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,157 | DEBUG | Skipping group layer: Trails Features
+2025-11-18 10:50:51,168 | INFO |   Analyzing layer: Trails Points
+2025-11-18 10:50:51,194 | DEBUG |   Layer Trails Points - showLabels: False
+2025-11-18 10:50:51,206 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,215 | INFO |   Analyzing layer: Trails Lines
+2025-11-18 10:50:51,222 | DEBUG |   Layer Trails Lines - showLabels: False
+2025-11-18 10:50:51,248 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,248 | DEBUG | Skipping group layer: Veg Stewardship Features
+2025-11-18 10:50:51,248 | INFO |   Analyzing layer: Veg Stewardship Points
+2025-11-18 10:50:51,273 | DEBUG |   Layer Veg Stewardship Points - showLabels: False
+2025-11-18 10:50:51,284 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,290 | INFO |   Analyzing layer: Veg Stewardship Lines
+2025-11-18 10:50:51,303 | DEBUG |   Layer Veg Stewardship Lines - showLabels: False
+2025-11-18 10:50:51,316 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,316 | INFO |   Analyzing layer: Veg Stewardship Polygons
+2025-11-18 10:50:51,331 | DEBUG |   Layer Veg Stewardship Polygons - showLabels: False
+2025-11-18 10:50:51,365 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,372 | DEBUG | Skipping group layer: Wetlands Features
+2025-11-18 10:50:51,377 | INFO |   Analyzing layer: Wetlands Points
+2025-11-18 10:50:51,398 | DEBUG |   Layer Wetlands Points - showLabels: False
+2025-11-18 10:50:51,407 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,415 | INFO |   Analyzing layer: Wetlands Lines
+2025-11-18 10:50:51,428 | DEBUG |   Layer Wetlands Lines - showLabels: False
+2025-11-18 10:50:51,448 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,448 | INFO |   Analyzing layer: Wetlands Polygons
+2025-11-18 10:50:51,465 | DEBUG |   Layer Wetlands Polygons - showLabels: False
+2025-11-18 10:50:51,472 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,479 | INFO |   Analyzing layer: Wildlife Points
+2025-11-18 10:50:51,494 | DEBUG |   Layer Wildlife Points - showLabels: False
+2025-11-18 10:50:51,515 | INFO |     Extracted: colors=1; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:50:51,523 | INFO | Processing: E:\Layers\Aerials\Aerials.lyr
+2025-11-18 10:52:44,040 | DEBUG | Skipping group layer: Aerials
+2025-11-18 10:52:44,043 | DEBUG | Skipping non-feature/non-raster layer: 2024 Pictometry - 3 in - Faster
+2025-11-18 10:52:44,048 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2024_3INCH
+2025-11-18 10:52:44,048 | INFO |   Analyzing layer: 2024 Pictometry - 3 in - Higher Quality
+2025-11-18 10:52:44,673 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:44,682 | DEBUG | Skipping non-feature/non-raster layer: 2024 Pictometry - 6 in - Faster
+2025-11-18 10:52:44,687 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2024_6INCH
+2025-11-18 10:52:44,691 | INFO |   Analyzing layer: 2024 Pictometry - 6 in - Higher Quality
+2025-11-18 10:52:44,825 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:44,833 | DEBUG | Skipping non-feature/non-raster layer: 2024 DRCOG - 3 in - 6 in -12 in
+2025-11-18 10:52:44,833 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:44,841 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:44,849 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:44,857 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:44,865 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:44,873 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:44,881 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:44,897 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:44,897 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:45,004 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,020 | DEBUG | Skipping non-feature/non-raster layer: 2022 Pictometry - 3 in - Faster
+2025-11-18 10:52:45,024 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2022_3INCH
+2025-11-18 10:52:45,026 | INFO |   Analyzing layer: 2022 Pictometry - 3 in - Higher Quality
+2025-11-18 10:52:45,124 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,140 | DEBUG | Skipping non-feature/non-raster layer: 2022 Pictometry - 6 in - Faster
+2025-11-18 10:52:45,140 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2022_6INCH
+2025-11-18 10:52:45,145 | INFO |   Analyzing layer: 2022 Pictometry - 6 in - Higher Quality
+2025-11-18 10:52:45,262 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,262 | DEBUG | Skipping non-feature/non-raster layer: 2022 DRCOG - 3 in - 6 in -12 in
+2025-11-18 10:52:45,271 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:45,279 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:45,288 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:45,297 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,304 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:45,312 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:45,320 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:45,337 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,337 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:45,445 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,445 | DEBUG | Skipping non-feature/non-raster layer: 2020 Pictometry - 3 in - Faster
+2025-11-18 10:52:45,457 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2020_3INCH
+2025-11-18 10:52:45,465 | INFO |   Analyzing layer: 2020 Pictometry - 3 in - Higher Quality
+2025-11-18 10:52:45,594 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,594 | DEBUG | Skipping non-feature/non-raster layer: 2020 Pictometry - 9 in - Faster
+2025-11-18 10:52:45,594 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2020_9INCH
+2025-11-18 10:52:45,602 | INFO |   Analyzing layer: 2020 Pictometry - 9 in - Higher Quality
+2025-11-18 10:52:45,746 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,753 | DEBUG | Skipping non-feature/non-raster layer: 2018 Pictometry - 3 in - Faster
+2025-11-18 10:52:45,761 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2018_3INCH
+2025-11-18 10:52:45,761 | INFO |   Analyzing layer: 2018 Pictometry - 3 in - Higher Quality
+2025-11-18 10:52:45,935 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:45,937 | DEBUG | Skipping non-feature/non-raster layer: 2018 Pictometry - 9 in - Faster
+2025-11-18 10:52:45,937 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2018_9INCH
+2025-11-18 10:52:45,952 | INFO |   Analyzing layer: 2018 Pictometry - 9 in - Higher Quality
+2025-11-18 10:52:46,064 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,064 | DEBUG | Skipping non-feature/non-raster layer: 2016 Leaf Off Frontrange - 6 in
+2025-11-18 10:52:46,071 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:46,072 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:46,079 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:46,095 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,097 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:46,103 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:46,113 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:46,128 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,136 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:46,284 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,287 | DEBUG | Skipping non-feature/non-raster layer: 2016 Leaf On Foothills - 1 ft
+2025-11-18 10:52:46,289 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:46,303 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:46,308 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:46,325 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,325 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:46,333 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:46,344 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:46,365 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,373 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:46,520 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,530 | DEBUG | Skipping non-feature/non-raster layer: 2014 Leaf Off Frontrange - 6in
+2025-11-18 10:52:46,533 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:46,536 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:46,547 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:46,561 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,567 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:46,578 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:46,586 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:46,602 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,610 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:46,733 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,745 | DEBUG | Skipping non-feature/non-raster layer: 2014 Leaf On Foothills - 1ft
+2025-11-18 10:52:46,750 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:46,759 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:46,759 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:46,770 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,778 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:46,786 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:46,794 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:46,820 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,820 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:46,945 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,945 | DEBUG | Skipping non-feature/non-raster layer: 2013 City - 3in
+2025-11-18 10:52:46,945 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:46,952 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:46,960 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:46,968 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:46,980 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:46,993 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:47,005 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:47,020 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,068 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:47,225 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,236 | DEBUG | Skipping non-feature/non-raster layer: 2013 Foothills - 6in
+2025-11-18 10:52:47,236 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:47,253 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:47,261 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:47,270 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,277 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:47,285 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:47,295 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:47,311 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,311 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:47,440 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,446 | INFO |   Analyzing layer: 2013 Leaf On - 6in
+2025-11-18 10:52:47,567 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,567 | INFO |   Analyzing layer: 2012 Leaf Off - 6in
+2025-11-18 10:52:47,694 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,703 | INFO |   Analyzing layer: 2011 6in
+2025-11-18 10:52:47,778 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,788 | INFO |   Analyzing layer: 2011 1ft
+2025-11-18 10:52:47,859 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:47,867 | INFO |   Analyzing layer: 2010 6 in
+2025-11-18 10:52:47,986 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:48,001 | INFO |   Analyzing layer: 2008 6in
+2025-11-18 10:52:48,105 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:48,105 | INFO |   Analyzing layer: 2008 1ft
+2025-11-18 10:52:48,258 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:48,258 | INFO |   Analyzing layer: 2004 1ft
+2025-11-18 10:52:48,386 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:48,386 | INFO |   Analyzing layer: 2000 1.5ft
+2025-11-18 10:52:48,527 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:48,527 | INFO | Processing: E:\Layers\Aerials\Aerial_2000.lyr
+2025-11-18 10:52:49,201 | DEBUG | Skipping group layer: Aerial 2000
+2025-11-18 10:52:49,201 | INFO |   Analyzing layer: 2000 1.5ft
+2025-11-18 10:52:49,266 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:49,274 | INFO | Processing: E:\Layers\Aerials\Aerial_2004.lyr
+2025-11-18 10:52:49,922 | DEBUG | Skipping group layer: Aerial 2004
+2025-11-18 10:52:49,937 | INFO |   Analyzing layer: 2004 1ft
+2025-11-18 10:52:50,032 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:50,051 | INFO | Processing: E:\Layers\Aerials\Aerial_2008.lyr
+2025-11-18 10:52:51,940 | DEBUG | Skipping group layer: Aerial 2008
+2025-11-18 10:52:51,940 | INFO |   Analyzing layer: 2008 6in
+2025-11-18 10:52:52,077 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:52,078 | INFO |   Analyzing layer: 2008 1ft
+2025-11-18 10:52:52,198 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:52,198 | INFO | Processing: E:\Layers\Aerials\Aerial_2010.lyr
+2025-11-18 10:52:53,054 | DEBUG | Skipping group layer: 2010 Imagery
+2025-11-18 10:52:53,054 | INFO |   Analyzing layer: 2010 6 in
+2025-11-18 10:52:53,170 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:53,179 | INFO | Processing: E:\Layers\Aerials\Aerial_2011.lyr
+2025-11-18 10:52:54,667 | DEBUG | Skipping group layer: 2011 Imagery
+2025-11-18 10:52:54,667 | INFO |   Analyzing layer: 2011 6in
+2025-11-18 10:52:54,739 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:54,739 | INFO |   Analyzing layer: 2011 1ft
+2025-11-18 10:52:54,820 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:54,820 | INFO | Processing: E:\Layers\Aerials\Aerial_2012.lyr
+2025-11-18 10:52:55,702 | INFO |   Analyzing layer: 2012 Leaf Off - 6in
+2025-11-18 10:52:55,832 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:55,832 | INFO | Processing: E:\Layers\Aerials\Aerial_2013.lyr
+2025-11-18 10:52:59,362 | DEBUG | Skipping group layer: 2013 Imagery
+2025-11-18 10:52:59,362 | DEBUG | Skipping non-feature/non-raster layer: 2013 City - 3in
+2025-11-18 10:52:59,362 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:59,376 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:59,379 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:59,396 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:59,398 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:59,404 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:59,423 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:59,440 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:59,440 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:59,569 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:59,569 | DEBUG | Skipping non-feature/non-raster layer: 2013 Foothills - 6in
+2025-11-18 10:52:59,585 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:52:59,593 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:52:59,598 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:52:59,615 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:59,623 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:52:59,623 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:52:59,633 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:52:59,655 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:59,657 | INFO |   Analyzing layer: Image
+2025-11-18 10:52:59,801 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:59,801 | INFO |   Analyzing layer: 2013 Leaf On - 6in
+2025-11-18 10:52:59,920 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:52:59,920 | INFO | Processing: E:\Layers\Aerials\Aerial_2014.lyr
+2025-11-18 10:53:02,870 | DEBUG | Skipping group layer: 2014 DRCOG - 6in & 1ft
+2025-11-18 10:53:02,870 | DEBUG | Skipping non-feature/non-raster layer: 2014 Leaf Off Frontrange - 6in
+2025-11-18 10:53:02,887 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:53:02,905 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:53:02,913 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:53:02,927 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:02,927 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:53:02,935 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:53:02,951 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:53:02,969 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:02,969 | INFO |   Analyzing layer: Image
+2025-11-18 10:53:03,167 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:03,171 | DEBUG | Skipping non-feature/non-raster layer: 2014 Leaf On Foothills - 1ft
+2025-11-18 10:53:03,171 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:53:03,187 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:53:03,195 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:53:03,212 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:03,219 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:53:03,227 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:53:03,236 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:53:03,252 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:03,260 | INFO |   Analyzing layer: Image
+2025-11-18 10:53:03,385 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:03,385 | INFO | Processing: E:\Layers\Aerials\Aerial_2016.lyr
+2025-11-18 10:53:06,357 | DEBUG | Skipping group layer: 2016 DRCOG - 6in & 1ft
+2025-11-18 10:53:06,357 | DEBUG | Skipping non-feature/non-raster layer: 2016 Leaf Off Frontrange - 6 in
+2025-11-18 10:53:06,381 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:53:06,391 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:53:06,402 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:53:06,410 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:06,418 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:53:06,426 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:53:06,434 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:53:06,451 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:06,454 | INFO |   Analyzing layer: Image
+2025-11-18 10:53:06,602 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:06,602 | DEBUG | Skipping non-feature/non-raster layer: 2016 Leaf On Foothills - 1 ft
+2025-11-18 10:53:06,610 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:53:06,618 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:53:06,627 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:53:06,643 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:06,643 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:53:06,660 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:53:06,676 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:53:06,692 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:06,692 | INFO |   Analyzing layer: Image
+2025-11-18 10:53:06,843 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:06,852 | INFO | Processing: E:\Layers\Aerials\Aerial_2018.lyr
+2025-11-18 10:53:08,708 | DEBUG | Skipping group layer: 2018 Pictometry Aerials
+2025-11-18 10:53:08,716 | DEBUG | Skipping non-feature/non-raster layer: 2018 Pictometry - 3 in - Faster
+2025-11-18 10:53:08,733 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2018_3INCH
+2025-11-18 10:53:08,733 | INFO |   Analyzing layer: 2018 Pictometry - 3 in - Higher Quality
+2025-11-18 10:53:08,871 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:08,871 | DEBUG | Skipping non-feature/non-raster layer: 2018 Pictometry - 9 in - Faster
+2025-11-18 10:53:08,878 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2018_9INCH
+2025-11-18 10:53:08,878 | INFO |   Analyzing layer: 2018 Pictometry - 9 in - Higher Quality
+2025-11-18 10:53:09,008 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:09,008 | INFO | Processing: E:\Layers\Aerials\Aerial_2020.lyr
+2025-11-18 10:53:12,854 | DEBUG | Skipping group layer: 2020 Pictometry Aerials
+2025-11-18 10:53:12,870 | DEBUG | Skipping non-feature/non-raster layer: 2020 Pictometry - 3 in - Faster
+2025-11-18 10:53:12,870 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2020_3INCH
+2025-11-18 10:53:12,873 | INFO |   Analyzing layer: 2020 Pictometry - 3 in - Higher Quality
+2025-11-18 10:53:12,986 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:13,002 | DEBUG | Skipping non-feature/non-raster layer: 2020 Pictometry - 9 in - Faster
+2025-11-18 10:53:13,010 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2020_9INCH
+2025-11-18 10:53:13,019 | INFO |   Analyzing layer: 2020 Pictometry - 9 in - Higher Quality
+2025-11-18 10:53:13,145 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:13,145 | INFO | Processing: E:\Layers\Aerials\Aerial_2020_Fall_Calwood_Fire.lyr
+2025-11-18 10:53:17,257 | INFO |   Analyzing layer: 2020 Fall Pictometry - 6 in - Calwood Fire
+2025-11-18 10:53:17,370 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:17,379 | INFO | Processing: E:\Layers\Aerials\Aerial_2022.lyr
+2025-11-18 10:53:22,975 | DEBUG | Skipping group layer: 2022 Aerials
+2025-11-18 10:53:22,978 | DEBUG | Skipping non-feature/non-raster layer: 2022 Pictometry - 3 in - Faster
+2025-11-18 10:53:22,980 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2022_3INCH
+2025-11-18 10:53:22,985 | INFO |   Analyzing layer: 2022 Pictometry - 3 in - Higher Quality
+2025-11-18 10:53:23,138 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:23,153 | DEBUG | Skipping non-feature/non-raster layer: 2022 Pictometry - 6 in - Faster
+2025-11-18 10:53:23,162 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2022_6INCH
+2025-11-18 10:53:23,162 | INFO |   Analyzing layer: 2022 Pictometry - 6 in - Higher Quality
+2025-11-18 10:53:23,314 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:23,314 | DEBUG | Skipping non-feature/non-raster layer: 2022 DRCOG - 3 in - 6 in -12 in
+2025-11-18 10:53:23,327 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:53:23,336 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:53:23,340 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:53:23,353 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:23,360 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:53:23,370 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:53:23,379 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:53:23,403 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:23,403 | INFO |   Analyzing layer: Image
+2025-11-18 10:53:23,556 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:23,556 | INFO | Processing: E:\Layers\Aerials\Aerial_2022_DRCOG.lyr
+2025-11-18 10:53:25,037 | DEBUG | Skipping non-feature/non-raster layer: 2022 DRCOG
+2025-11-18 10:53:25,043 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:53:25,053 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:53:25,059 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:53:25,075 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:25,075 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:53:25,086 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:53:25,100 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:53:25,116 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:25,116 | INFO |   Analyzing layer: Image
+2025-11-18 10:53:25,253 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:25,253 | INFO | Processing: E:\Layers\Aerials\Aerial_2022_DRCOG_Web_Service_State_Plane_Colorado_Central.lyr
+2025-11-18 10:53:31,512 | INFO |   Analyzing layer: 2022 DRCOG Aerials State Plane Colorado Central Web Service
+2025-11-18 10:53:31,631 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:31,631 | INFO | Processing: E:\Layers\Aerials\Aerial_2022_January_Marshall_Fire.lyr
+2025-11-18 10:53:35,171 | INFO |   Analyzing layer: 2022 January Pictometry - 2 in - Marshall Fire
+2025-11-18 10:53:35,287 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:35,287 | INFO | Processing: E:\Layers\Aerials\Aerial_2022_Pictometry.lyr
+2025-11-18 10:53:37,407 | DEBUG | Skipping group layer: 2022 Pictometry Aerials
+2025-11-18 10:53:37,415 | DEBUG | Skipping non-feature/non-raster layer: 2022 Pictometry - 3 in - Faster
+2025-11-18 10:53:37,419 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2022_3INCH
+2025-11-18 10:53:37,419 | INFO |   Analyzing layer: 2022 Pictometry - 3 in - Higher Quality
+2025-11-18 10:53:37,539 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:37,548 | DEBUG | Skipping non-feature/non-raster layer: 2022 Pictometry - 6 in - Faster
+2025-11-18 10:53:37,548 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2022_6INCH
+2025-11-18 10:53:37,556 | INFO |   Analyzing layer: 2022 Pictometry - 6 in - Higher Quality
+2025-11-18 10:53:37,701 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:37,704 | INFO | Processing: E:\Layers\Aerials\Aerial_2024_Pictometry.lyr
+2025-11-18 10:53:42,597 | DEBUG | Skipping group layer: 2024 Pictometry Aerials
+2025-11-18 10:53:42,607 | DEBUG | Skipping non-feature/non-raster layer: 2024 Pictometry - 3 in - Faster
+2025-11-18 10:53:42,611 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2024_3INCH
+2025-11-18 10:53:42,614 | INFO |   Analyzing layer: 2024 Pictometry - 3 in - Higher Quality
+2025-11-18 10:53:42,749 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:42,758 | DEBUG | Skipping non-feature/non-raster layer: 2024 Pictometry - 6 in - Faster
+2025-11-18 10:53:42,758 | DEBUG | Skipping non-feature/non-raster layer: raster.RASTER.PICTOMETRY2024_6INCH
+2025-11-18 10:53:42,758 | INFO |   Analyzing layer: 2024 Pictometry - 6 in - Higher Quality
+2025-11-18 10:53:42,891 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:53:42,896 | INFO | Processing: E:\Layers\Aerials\Historic Aerials (1937 - 1999).lyr
+2025-11-18 10:54:41,966 | DEBUG | Skipping group layer: Historical Aerials (1937 - 1999)
+2025-11-18 10:54:41,966 | DEBUG | Skipping non-feature/non-raster layer: 1937 B&W City - Scanned
+2025-11-18 10:54:41,976 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:54:41,985 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:54:41,993 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:54:42,009 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,009 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:54:42,017 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:54:42,033 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:54:42,049 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,049 | INFO |   Analyzing layer: Seamline
+2025-11-18 10:54:42,063 | DEBUG | layer.symbology parsing error for Seamline: 
+2025-11-18 10:54:42,066 | DEBUG |   Layer Seamline - showLabels: False
+2025-11-18 10:54:42,082 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,082 | INFO |   Analyzing layer: Image
+2025-11-18 10:54:42,210 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,210 | DEBUG | Skipping non-feature/non-raster layer: 1938 B&W City - Scanned
+2025-11-18 10:54:42,219 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:54:42,229 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:54:42,249 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:54:42,267 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,275 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:54:42,283 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:54:42,297 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:54:42,307 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,314 | INFO |   Analyzing layer: Seamline
+2025-11-18 10:54:42,322 | DEBUG | layer.symbology parsing error for Seamline: 
+2025-11-18 10:54:42,330 | DEBUG |   Layer Seamline - showLabels: False
+2025-11-18 10:54:42,347 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,355 | INFO |   Analyzing layer: Image
+2025-11-18 10:54:42,405 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,413 | DEBUG | Skipping non-feature/non-raster layer: 1940 B&W City - Scanned
+2025-11-18 10:54:42,421 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:54:42,430 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:54:42,446 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:54:42,457 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,480 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:54:42,497 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:54:42,506 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:54:42,530 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,546 | INFO |   Analyzing layer: Image
+2025-11-18 10:54:42,597 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,597 | DEBUG | Skipping non-feature/non-raster layer: 1958 B&W City - Scanned
+2025-11-18 10:54:42,604 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:54:42,611 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:54:42,619 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:54:42,630 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,630 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:54:42,638 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:54:42,654 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:54:42,666 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,679 | INFO |   Analyzing layer: Seamline
+2025-11-18 10:54:42,691 | DEBUG | layer.symbology parsing error for Seamline: 
+2025-11-18 10:54:42,700 | DEBUG |   Layer Seamline - showLabels: False
+2025-11-18 10:54:42,721 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,730 | INFO |   Analyzing layer: Image
+2025-11-18 10:54:42,780 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,794 | DEBUG | Skipping non-feature/non-raster layer: 1971 B&W City - Scanned
+2025-11-18 10:54:42,803 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:54:42,814 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:54:42,831 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:54:42,839 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,847 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:54:42,855 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:54:42,866 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:54:42,880 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,880 | INFO |   Analyzing layer: Seamline
+2025-11-18 10:54:42,887 | DEBUG | layer.symbology parsing error for Seamline: 
+2025-11-18 10:54:42,896 | DEBUG |   Layer Seamline - showLabels: False
+2025-11-18 10:54:42,913 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,913 | INFO |   Analyzing layer: Image
+2025-11-18 10:54:42,967 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:42,970 | INFO |   Analyzing layer: 1977 B&W County Wide - 1ft
+2025-11-18 10:54:43,010 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,018 | DEBUG | Skipping non-feature/non-raster layer: 1982 B&W City - Scanned
+2025-11-18 10:54:43,018 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:54:43,026 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:54:43,034 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:54:43,050 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,050 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:54:43,058 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:54:43,067 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:54:43,088 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,104 | INFO |   Analyzing layer: Seamline
+2025-11-18 10:54:43,112 | DEBUG | layer.symbology parsing error for Seamline: 
+2025-11-18 10:54:43,116 | DEBUG |   Layer Seamline - showLabels: False
+2025-11-18 10:54:43,130 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,138 | INFO |   Analyzing layer: Image
+2025-11-18 10:54:43,188 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,188 | DEBUG | Skipping non-feature/non-raster layer: 1993 B&W City
+2025-11-18 10:54:43,204 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:54:43,213 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:54:43,223 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:54:43,230 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,238 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:54:43,246 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:54:43,248 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:54:43,270 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,273 | INFO |   Analyzing layer: Image
+2025-11-18 10:54:43,328 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,330 | DEBUG | Skipping non-feature/non-raster layer: 1999 B&W City
+2025-11-18 10:54:43,334 | INFO |   Analyzing layer: Boundary
+2025-11-18 10:54:43,336 | DEBUG | layer.symbology parsing error for Boundary: 
+2025-11-18 10:54:43,346 | DEBUG |   Layer Boundary - showLabels: False
+2025-11-18 10:54:43,354 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,363 | INFO |   Analyzing layer: Footprint
+2025-11-18 10:54:43,377 | DEBUG | layer.symbology parsing error for Footprint: 
+2025-11-18 10:54:43,380 | DEBUG |   Layer Footprint - showLabels: False
+2025-11-18 10:54:43,396 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,396 | INFO |   Analyzing layer: Image
+2025-11-18 10:54:43,454 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:43,454 | INFO | Processing: E:\Layers\Aerials\Olde Stage Fire - Jan 8, 2009.lyr
+2025-11-18 10:54:50,459 | INFO |   Analyzing layer: Olde Stage Fire - Jan 8, 2009
+2025-11-18 10:54:50,585 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:50,585 | INFO | Processing: E:\Layers\Aerials\LiDAR Imagery\Boulder_Area1and3_6in_sid.lyr
+2025-11-18 10:54:51,268 | INFO |   Analyzing layer: Boulder_Area1and3_6in.sid
+2025-11-18 10:54:51,375 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 10:54:51,375 | INFO | Processing: E:\Layers\Aerials\NAIP\USA NAIP Imagery - Color Infrared.lyr
+2025-11-18 11:00:18,344 | INFO |   Analyzing layer: USA NAIP Imagery: Color Infrared
+2025-11-18 11:00:18,439 | INFO |     Extracted: colors=0; labels=False; bold=Unknown; halo=Unknown
+2025-11-18 11:00:18,454 | INFO | Processing: E:\Layers\Aerials\NAIP\USA NAIP Imagery - NDVI.lyr

@@ -1,0 +1,14 @@
+2025-11-17 08:34:15,645 | INFO | Log started: C:\Users\boadae\Desktop\OSMP_Audit_Layers_20251117_083415.log
+2025-11-17 08:34:15,646 | INFO | Starting extraction for map: Layers
+2025-11-17 08:34:15,647 | INFO | Processing: No Public Access 
+2025-11-17 08:34:15,716 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:34:15,718 | INFO | Processing: Current Wildlife Closures
+2025-11-17 08:34:15,744 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:34:15,744 | INFO | Processing: Habitat Conservation Areas
+2025-11-17 08:34:15,779 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:34:15,780 | INFO | Processing: No Public Access (Temporary)
+2025-11-17 08:34:15,812 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:34:15,812 | INFO | Processing: Off-trail Use Prohibited
+2025-11-17 08:34:15,833 | INFO |   \u2713 Extracted: colors=1; labels=False
+2025-11-17 08:34:15,841 | INFO | SUCCESS! Processed 5 layers
+2025-11-17 08:34:15,842 | INFO | CSV saved to: C:\Users\boadae\Desktop\OSMP_Baseline_Layers_20251117_083415.csv

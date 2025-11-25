@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSMP Accessibility Remediation Tracker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #1a1a1a; margin-bottom: 5px; font-size: 28px; }
+        .subtitle { color: #666; margin-bottom: 5px; font-size: 14px; }
+        .phase-label { background: #dcfce7; color: #166534; padding: 5px 12px; border-radius: 4px; font-size: 13px; font-weight: 600; display: inline-block; margin-bottom: 20px; }
+        .progress-section { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 20px; margin-bottom: 25px; }
+        .progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .progress-label { font-weight: 600; color: #333; }
+        .progress-percentage { font-size: 20px; font-weight: 700; color: #16a34a; }
+        .progress-bar { width: 100%; height: 12px; background: #e0e0e0; border-radius: 6px; overflow: hidden; }
+        .progress-fill { height: 100%; background: #16a34a; transition: width 0.3s ease; }
+        .progress-target { font-size: 12px; color: #555; margin-top: 8px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 25px; }
+        .stat-card { background: white; border: 1px solid #e5e7eb; border-radius: 6px; padding: 15px; text-align: center; }
+        .stat-number { font-size: 24px; font-weight: 700; color: #1a1a1a; }
+        .stat-label { font-size: 12px; color: #666; margin-top: 5px; }
+        .controls { display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; }
+        .search-box { flex: 1; min-width: 250px; }
+        input[type="text"] { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+        select, button { padding: 10px 16px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; cursor: pointer; background: white; }
+        .btn-export { background: #16a34a; color: white; border-color: #16a34a; }
+        .btn-export:hover { background: #15803d; }
+        .btn-save { background: #2563eb; color: white; border-color: #2563eb; }
+        .btn-save:hover { background: #1d4ed8; }
+        .btn-load { background: #7c3aed; color: white; border-color: #7c3aed; }
+        .btn-load:hover { background: #6d28d9; }
+        .map-service { border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
+        .map-header { background: #f5f5f5; padding: 15px 20px; cursor: pointer; display: flex; align-items: center; gap: 12px; }
+        .map-header:hover { background: #e8e8e8; }
+        .map-title { font-size: 18px; font-weight: 600; color: #1a1a1a; }
+        .map-count { font-size: 14px; color: #666; }
+        .layers-container { padding: 20px; display: none; }
+        .layers-container.expanded { display: block; }
+        .layer-item { border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 15px; overflow: hidden; }
+        .layer-header { padding: 12px 15px; cursor: pointer; display: flex; align-items: center; gap: 12px; }
+        .layer-header:hover { background: rgba(0,0,0,0.02); }
+        .status-completed { background: #f0fdf4; border-color: #86efac; }
+        .status-in-progress { background: #fefce8; border-color: #fde047; }
+        .status-planned { background: #f0f9ff; border-color: #bae6fd; }
+        .status-not-started { background: #f9fafb; border-color: #e5e7eb; }
+        .layer-name { font-weight: 500; color: #1a1a1a; flex: 1; }
+        .layer-form { padding: 20px; background: white; border-top: 1px solid #e0e0e0; display: none; }
+        .layer-form.expanded { display: block; }
+        .form-section { margin-bottom: 20px; }
+        .form-section h4 { font-size: 14px; font-weight: 600; color: #1a1a1a; margin-bottom: 10px; }
+        .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .form-group { display: flex; flex-direction: column; gap: 6px; }
+        label { font-size: 13px; font-weight: 500; color: #555; }
+        textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; font-family: inherit; resize: vertical; }
+        .changes-section { background: #ecfdf5; border: 1px solid #86efac; border-radius: 6px; padding: 15px; margin-top: 15px; }
+        .changes-section h4 { font-size: 14px; font-weight: 600; color: #166534; margin-bottom: 10px; }
+        .verification-section { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 6px; padding: 15px; margin-top: 15px; }
+        .verification-section h4 { font-size: 14px; font-weight: 600; color: #1e40af; margin-bottom: 10px; }
+        input[type="file"] { display: none; }
+        input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
+        input[type="date"] { padding: 8px 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+        .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
+        .modal.show { display: flex; }
+        .modal-content { background: white; border-radius: 8px; max-width: 800px; width: 100%; max-height: 80vh; display: flex; flex-direction: column; }
+        .modal-header { padding: 20px; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; }
+        .modal-header h3 { font-size: 18px; font-weight: 600; }
+        .modal-close { background: none; border: none; font-size: 24px; cursor: pointer; color: #666; }
+        .modal-body { padding: 20px; overflow: auto; flex: 1; }
+        .modal-footer { padding: 20px; border-top: 1px solid #e0e0e0; background: #f9fafb; display: flex; gap: 10px; }
+        .modal-footer button { flex: 1; }
+        .export-textarea { width: 100%; height: 400px; font-family: 'Courier New', monospace; font-size: 11px; border: 1px solid #ddd; border-radius: 6px; padding: 10px; }
+        .btn-secondary { background: #6b7280; color: white; border-color: #6b7280; }
+        .btn-secondary:hover { background: #4b5563; }
+        .chevron { width: 16px; height: 16px; }
+        .checkbox-group { display: flex; align-items: center; gap: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OSMP Accessibility Remediation Tracker</h1>
+        <p class="subtitle">Track Changes & Verify Compliance - October 2026 Implementation Deadline</p>
+        <div class="phase-label">PHASE 2: REMEDIATION & VERIFICATION</div>
+        
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-label">Remediation Progress</span>
+                <span class="progress-percentage" id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+            <div class="progress-target">Target: 90% compliance by October 31, 2026</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalLayers">68</div>
+                <div class="stat-label">Total Layers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="completedCount">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="inProgressCount">0</div>
+                <div class="stat-label">In Progress</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="plannedCount">0</div>
+                <div class="stat-label">Planned</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="verifiedCount">0</div>
+                <div class="stat-label">Verified</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search layers...">
+            </div>
+            <select id="filterSelect">
+                <option value="all">All Statuses</option>
+                <option value="not-started">Not Started</option>
+                <option value="planned">Planned</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select>
+            <button class="btn-export" onclick="exportRemediation()">Export Progress</button>
+            <button class="btn-save" onclick="saveRemediation()">Save Progress</button>
+            <button class="btn-load" onclick="document.getElementById('fileInput').click()">Load Progress</button>
+            <input type="file" id="fileInput" accept=".json" onchange="loadRemediation(event)">
+        </div>
+
+        <div id="mapServices"></div>
+    </div>
+
+    <div class="modal" id="exportModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Export Remediation Progress (CSV)</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <textarea id="exportText" class="export-textarea" readonly></textarea>
+                <div style="margin-top:15px;font-size:13px;color:#555;">
+                    <strong>Use this export for:</strong>
+                    <ol style="margin-left:20px;margin-top:5px;">
+                        <li>Progress reports to stakeholders</li>
+                        <li>Documentation of changes made</li>
+                        <li>Final compliance summary report</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-export" onclick="copyToClipboard()">Copy to Clipboard</button>
+                <button class="btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var mapLayers = {
+            'OSMP Trails': ['OSMP Public Notifications','Closed Trailheads','Other Boulder Area Trail Closures','Trail Difficulty','Wide Trail Opportunities in City of Boulder','OSMP Trails - Trailheads','OSMP Trails – Trail Intersection Points','OSMP Trails – OSMP Closed Trails','OSMP Trails – OSMP Open Trails','OSMP Trails – Trail Milage Labels','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited'],
+            'Dog Regulations': ['OSMP Public Notifications','Closed Trailheads','Other Boulder Area Trail Closures','OSMP Dog Regulations – Trailhead Fee (for non-Boulder County Residents)','OSMP Dog Regulations – Trail Intersection Points','OSMP Dog Regulations – Trail Milage Labels','OSMP Dog Regulations – Seasonal Dog Regs','OSMP Dog Regulations – Dog Regs on Roads','OSMP Dog Regulations –Closed Trails','OSMP Dog Regulations – Dog Trail Regulation','OSMP Dog Regulations – Dog Regulation Areas','OSMP Dog Regulations – Trailhead Leash Areas','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited','Water Regs','Bridges'],
+            'Wildlife Closures': ['OSMP Public Notifications','Closed Trailheads','Seasonal Dog Regulations','Other Boulder Area Trail Closures','OSMP Trails - Trailheads','OSMP Trails – Trail Intersection Points','OSMP Trails – OSMP Closed Trails','OSMP Trails – OSMP Open Trails','OSMP Trails – Trail Milage Labels','Other City of Boulder Trails and Paths','Other Boulder Area Trails and Paths','Wildlife Closure Areas – Climbing Formations','Wildlife Closure Areas – Climbing Access','Wildlife Closure Areas – Current Wildlife Closures','Wildlife Closure Areas – Habitat Conservation Areas','OSMP Wildlife Closures - All','Restricted Access – No Public Access','Restricted Access – Current Wildlife Closures','Restricted Access – Habitat Conservation Area','Restricted Access – No Public Access (Temporary)','Restricted Access – Off-trail Use Prohibited','Water Regs'],
+            'Horse Regulations': ['Horse Trailer Parking at OSMP Trailheads','Trail Intersection Pts','Closed Trails','Trail Milage Labels','Trail Regulations (Horse)','Area Regulations (Horse)','Other Boulder Area Trails']
+        };
+
+        var remediationData = loadFromStorage();
+
+        function loadFromStorage() {
+            var saved = localStorage.getItem('osmpRemediationTracker');
+            if (saved) return JSON.parse(saved);
+            
+            // Pre-populate with Dog Regulations example
+            var data = {};
+            var dogRegLayers = ['OSMP Dog Regulations – Seasonal Dog Regs','OSMP Dog Regulations – Dog Trail Regulation'];
+            dogRegLayers.forEach(function(layer) {
+                var key = 'Dog Regulations|||'+layer;
+                data[key] = {
+                    status: 'in-progress',
+                    colorChanges: 'Changed to color blind friendly palette. Added black strokes to all symbols.',
+                    contrastChanges: 'Increased stroke width for 3:1 contrast. Measured: Symbol 4.2:1, Labels 4.8:1',
+                    symbolChanges: 'Added categories: On-Corridor LVS, LVS M-F. Changed "Regulation Varies" to "Regulation Changes on Trail"',
+                    labelChanges: 'Arial 10pt Bold (trails), Arial 12pt Narrow Bold (seasonal)',
+                    popupChanges: 'Added alt text to all icons. Header: #27443A with white text. Restricted: #741919 with white text.',
+                    implementationDate: '',
+                    verifiedBy: '',
+                    verificationDate: '',
+                    verificationNotes: '',
+                    contrastVerified: false,
+                    colorBlindVerified: false,
+                    screenReaderVerified: false,
+                    finalNotes: ''
+                };
+            });
+            return data;
+        }
+
+        function getLayerRemediation(mapName,layerName) {
+            var key = mapName+'|||'+layerName;
+            if (!remediationData[key]) {
+                remediationData[key] = {
+                    status: 'not-started',
+                    colorChanges: '',
+                    contrastChanges: '',
+                    symbolChanges: '',
+                    labelChanges: '',
+                    popupChanges: '',
+                    implementationDate: '',
+                    verifiedBy: '',
+                    verificationDate: '',
+                    verificationNotes: '',
+                    contrastVerified: false,
+                    colorBlindVerified: false,
+                    screenReaderVerified: false,
+                    finalNotes: ''
+                };
+            }
+            return remediationData[key];
+        }
+
+        function updateLayerRemediation(mapName,layerName,field,value) {
+            var key = mapName+'|||'+layerName;
+            var data = getLayerRemediation(mapName,layerName);
+            data[field] = value;
+            remediationData[key] = data;
+            localStorage.setItem('osmpRemediationTracker',JSON.stringify(remediationData));
+            updateStats();
+        }
+
+        function updateStats() {
+            var total=0, completed=0, inProgress=0, planned=0, verified=0;
+            Object.keys(mapLayers).forEach(function(mapName) {
+                mapLayers[mapName].forEach(function(layer) {
+                    total++;
+                    var data = getLayerRemediation(mapName,layer);
+                    if (data.status === 'completed') completed++;
+                    if (data.status === 'in-progress') inProgress++;
+                    if (data.status === 'planned') planned++;
+                    if (data.verificationDate) verified++;
+                });
+            });
+            var pct = Math.round((completed/total)*100);
+            document.getElementById('totalLayers').textContent = total;
+            document.getElementById('completedCount').textContent = completed;
+            document.getElementById('inProgressCount').textContent = inProgress;
+            document.getElementById('plannedCount').textContent = planned;
+            document.getElementById('verifiedCount').textContent = verified;
+            document.getElementById('progressPercent').textContent = pct+'%';
+            document.getElementById('progressFill').style.width = pct+'%';
+        }
+
+        function renderMapServices() {
+            var search = document.getElementById('searchInput').value.toLowerCase();
+            var filter = document.getElementById('filterSelect').value;
+            var html = '';
+            Object.keys(mapLayers).forEach(function(mapName) {
+                var filtered = mapLayers[mapName].filter(function(layer) {
+                    var data = getLayerRemediation(mapName,layer);
+                    return layer.toLowerCase().indexOf(search)>-1 && (filter==='all'||data.status===filter);
+                });
+                if (filtered.length===0) return;
+                var mapId = mapName.replace(/[^a-zA-Z0-9]/g,'-');
+                html += '<div class="map-service"><div class="map-header" onclick="toggleMap(\''+mapId+'\')"><span class="chevron" id="chevron-'+mapId+'">▶</span><span class="map-title">'+mapName+'</span><span class="map-count">('+filtered.length+' layers)</span></div><div class="layers-container" id="layers-'+mapId+'">';
+                filtered.forEach(function(layer) {
+                    var data = getLayerRemediation(mapName,layer);
+                    var layerId = (mapName+'-'+layer).replace(/[^a-zA-Z0-9]/g,'-');
+                    html += '<div class="layer-item status-'+data.status+'"><div class="layer-header" onclick="toggleLayer(\''+layerId+'\',\''+mapName.replace(/'/g,"\\'")+'\',\''+layer.replace(/'/g,"\\'")+'\')"><span class="chevron" id="chevron-'+layerId+'">▶</span><span class="layer-name">'+layer+'</span></div><div class="layer-form" id="form-'+layerId+'"></div></div>';
+                });
+                html += '</div></div>';
+            });
+            document.getElementById('mapServices').innerHTML = html;
+        }
+
+        function renderLayerForm(mapName,layerName,data) {
+            var html = '<div class="form-section"><h4>Remediation Status</h4><div class="form-grid">';
+            html += '<div class="form-group"><label>Status</label><select onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'status\',this.value)"><option value="not-started"'+(data.status==='not-started'?' selected':'')+'>Not Started</option><option value="planned"'+(data.status==='planned'?' selected':'')+'>Planned</option><option value="in-progress"'+(data.status==='in-progress'?' selected':'')+'>In Progress</option><option value="completed"'+(data.status==='completed'?' selected':'')+'>Completed</option></select></div>';
+            html += '<div class="form-group"><label>Implementation Date</label><input type="date" value="'+data.implementationDate+'" onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'implementationDate\',this.value)"></div>';
+            html += '</div></div>';
+            
+            html += '<div class="changes-section"><h4>Changes Made</h4>';
+            html += '<div class="form-group"><label>Color Changes</label><textarea rows="2" placeholder="e.g., Changed to color blind friendly palette, added strokes..." onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'colorChanges\',this.value)">'+data.colorChanges+'</textarea></div>';
+            html += '<div class="form-group"><label>Contrast Changes</label><textarea rows="2" placeholder="e.g., Increased contrast to 4.5:1, measured with WebAIM..." onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'contrastChanges\',this.value)">'+data.contrastChanges+'</textarea></div>';
+            html += '<div class="form-group"><label>Symbol Changes</label><textarea rows="2" placeholder="e.g., Added new categories, updated icons..." onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'symbolChanges\',this.value)">'+data.symbolChanges+'</textarea></div>';
+            html += '<div class="form-group"><label>Label Changes</label><textarea rows="2" placeholder="e.g., Changed font to Arial 10pt Bold..." onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'labelChanges\',this.value)">'+data.labelChanges+'</textarea></div>';
+            html += '<div class="form-group"><label>Pop-up Changes</label><textarea rows="2" placeholder="e.g., Added alt text to icons, updated colors..." onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'popupChanges\',this.value)">'+data.popupChanges+'</textarea></div>';
+            html += '</div>';
+            
+            html += '<div class="verification-section"><h4>Verification</h4><div class="form-grid">';
+            html += '<div class="form-group"><label>Verified By</label><input type="text" value="'+data.verifiedBy+'" onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'verifiedBy\',this.value)"></div>';
+            html += '<div class="form-group"><label>Verification Date</label><input type="date" value="'+data.verificationDate+'" onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'verificationDate\',this.value)"></div>';
+            html += '</div>';
+            html += '<div style="margin-top:15px;">';
+            html += '<div class="checkbox-group"><input type="checkbox"'+(data.contrastVerified?' checked':'')+' onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'contrastVerified\',this.checked)"><label>Contrast ratios verified (3:1 minimum)</label></div>';
+            html += '<div class="checkbox-group"><input type="checkbox"'+(data.colorBlindVerified?' checked':'')+' onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'colorBlindVerified\',this.checked)"><label>Color blind simulation tested</label></div>';
+            html += '<div class="checkbox-group"><input type="checkbox"'+(data.screenReaderVerified?' checked':'')+' onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'screenReaderVerified\',this.checked)"><label>Screen reader compatible</label></div>';
+            html += '</div>';
+            html += '<div class="form-group" style="margin-top:15px;"><label>Verification Notes</label><textarea rows="2" placeholder="Notes from verification testing..." onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'verificationNotes\',this.value)">'+data.verificationNotes+'</textarea></div>';
+            html += '</div>';
+            
+            html += '<div class="form-section"><label>Final Notes</label><textarea rows="2" placeholder="Summary for final report..." onchange="updateLayerRemediation(\''+mapName.replace(/'/g,"\\'")+'\',\''+layerName.replace(/'/g,"\\'")+'\',\'finalNotes\',this.value)">'+data.finalNotes+'</textarea></div>';
+            
+            return html;
+        }
+
+        function toggleMap(mapId) {
+            var container = document.getElementById('layers-'+mapId);
+            var chevron = document.getElementById('chevron-'+mapId);
+            if (container.classList.contains('expanded')) {
+                container.classList.remove('expanded');
+                chevron.textContent = '▶';
+            } else {
+                container.classList.add('expanded');
+                chevron.textContent = '▼';
+            }
+        }
+
+        function toggleLayer(layerId,mapName,layerName) {
+            var form = document.getElementById('form-'+layerId);
+            var chevron = document.getElementById('chevron-'+layerId);
+            if (form.classList.contains('expanded')) {
+                form.classList.remove('expanded');
+                chevron.textContent = '▶';
+            } else {
+                var data = getLayerRemediation(mapName,layerName);
+                form.innerHTML = renderLayerForm(mapName,layerName,data);
+                form.classList.add('expanded');
+                chevron.textContent = '▼';
+            }
+        }
+
+        function exportRemediation() {
+            var csv = 'Map Service,Layer Name,Status,Implementation Date,Color Changes,Contrast Changes,Symbol Changes,Label Changes,Popup Changes,Verified By,Verification Date,Contrast Verified,Color Blind Verified,Screen Reader Verified,Verification Notes,Final Notes\n';
+            Object.keys(mapLayers).forEach(function(mapName) {
+                mapLayers[mapName].forEach(function(layer) {
+                    var data = getLayerRemediation(mapName,layer);
+                    var clean = function(text) { return (text||'').replace(/"/g,'""').replace(/\n/g,' '); };
+                    csv += '"'+mapName+'","'+layer+'","'+data.status+'","'+data.implementationDate+'","'+clean(data.colorChanges)+'","'+clean(data.contrastChanges)+'","'+clean(data.symbolChanges)+'","'+clean(data.labelChanges)+'","'+clean(data.popupChanges)+'","'+data.verifiedBy+'","'+data.verificationDate+'","'+data.contrastVerified+'","'+data.colorBlindVerified+'","'+data.screenReaderVerified+'","'+clean(data.verificationNotes)+'","'+clean(data.finalNotes)+'"\n';
+                });
+            });
+            document.getElementById('exportText').value = csv;
+            document.getElementById('exportModal').classList.add('show');
+        }
+
+        function closeModal() {
+            document.getElementById('exportModal').classList.remove('show');
+        }
+
+        function copyToClipboard() {
+            var text = document.getElementById('exportText');
+            text.select();
+            document.execCommand('copy');
+            alert('Remediation progress copied! Paste into Excel and save as remediation.csv');
+        }
+
+        function saveRemediation() {
+            var dataStr = JSON.stringify(remediationData, null, 2);
+            var blob = new Blob([dataStr], {type:'application/json'});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'OSMP_Remediation_Progress_'+new Date().toISOString().split('T')[0]+'.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function loadRemediation(event) {
+            var file = event.target.files[0];
+            if (!file) return;
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    remediationData = JSON.parse(e.target.result);
+                    localStorage.setItem('osmpRemediationTracker',JSON.stringify(remediationData));
+                    renderMapServices();
+                    updateStats();
+                    alert('Remediation progress loaded successfully!');
+                } catch (error) {
+                    alert('Error loading file: '+error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        document.getElementById('searchInput').addEventListener('input',renderMapServices);
+        document.getElementById('filterSelect').addEventListener('change',renderMapServices);
+
+        renderMapServices();
+        updateStats();
+    </script>
+</body>
+</html>
